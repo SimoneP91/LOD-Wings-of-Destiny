@@ -29,7 +29,7 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 | Cursed Zones | Whole areas become dangerous and generous | Any area with monsters |
 | The Forge | Upgrade weapons from +1 to +5 | Every equipment shop |
 | The Arena | Re-fight defeated bosses, scaled to your level | Lohan item shop |
-| Arena Medals | Trade them for stones, rare items and the God set | Lohan item shop |
+| Arena Medals | Trade them for stones, rare items and the Seraph set | Lohan item shop |
 | New equipment | Wyrmling, Elder and Heirloom weapons, new armour and accessories | Shops, drops, Arena |
 | Reward tuning | EXP, gold and addition EXP multipliers | Options |
 
@@ -81,8 +81,8 @@ Standard makes every monster a little tougher than the original game; Hard is a 
 
 - EXP and gold per monster: the higher of the original and the Hard value.
 - Item drops come from reworked drop tables, with more and better items.
-- New rare drops: Polter Helm (100% from the Polter Helm boss), Polter Armor, Titan Ring (rare, from Metal Fang), Archangel's Prayer (100% from the Divine Dragoon Ghost).
-- Rock Fireflies: 12% per monster in a few specific areas.
+- New rare drops: Wraith Helm (100% from the Polter boss), Wraith Mail, Colossus Ring (rare, from Metal Fang), Eternal Prayer (100% from the Divine Dragoon Ghost).
+- Glowmoss: 12% per monster in a few specific areas.
 
 **Monster HP display**
 
@@ -93,7 +93,7 @@ When you target a monster, a bar under its name shows its current and maximum HP
 - Ten additions hit harder and give more SP as they level up: Volcano, Flower Storm (Lavitz and Albert), Hard Blade, More & More, Demon's Dance, Cat's Cradle, Pursuit, Inferno, Bone Crush. Perky Step is unchanged.
 - Shana and Miranda: Dragoon attack raised to 365%.
 - Wargod's Sash: SP gain +75% (was +50%). Spirit Ring: 30 SP per turn (was 20). Dancing Dagger: SP gain +50% (was none).
-- Polter Helm and Polter Armor drain 2% of maximum HP per piece at the start of each of the wearer's turns, never below 1 HP.
+- Wraith Helm and Wraith Mail drain 2% of maximum HP per piece at the start of each of the wearer's turns, never below 1 HP.
 - To leave Dragoon form at will, turn on Severed Chains' own *Extended Dragoon Actions* option.
 
 ## Elite battles and Cursed Zones
@@ -205,16 +205,16 @@ Right after the challenges, the Lohan item shop lists items you buy with Arena M
 | Item | Medals |
 | --- | --- |
 | Forge Stone | 2 |
-| Rock Fireflies | 3 |
+| Glowmoss | 3 |
 | Dragon Stone | 6 |
-| God's Crown | 30 |
-| God Speed | 30 |
-| God Devourer | 35 |
-| God Eater | 35 |
-| God Slayer | 40 |
-| Archangel's Prayer | 100 |
+| Seraph Circlet | 30 |
+| Seraph Greaves | 30 |
+| Seraph Mail | 35 |
+| Seraph Robe | 35 |
+| Seraph Sigil | 40 |
+| Eternal Prayer | 100 |
 
-The God set is only available here.
+The Seraph set is only available here.
 
 ## Equipment and items
 
@@ -258,11 +258,11 @@ Prices are shop prices; every weapon below can be forged.
 | --- | --- | --- | --- | --- | --- | --- |
 | Fire / Aqua / Wind / Earth / Bolt / Light / Dark Buster | Rose | One each | 35 | Magic attack 5, SP gain +25% | Lohan | 1,000 G |
 | Sabre | Rose | — | 35 | | Lohan | 800 G |
-| Lava Blade | Dart | Fire | 25 | | Furni | 3,000 G |
-| Void Estoc | Rose | Dark | 33 | | Furni | 3,000 G |
-| Spectral Arrow | Shana, Miranda | Light | 22 | Hit +20 | Furni | 3,000 G |
-| Hydro Hammer | Meru | Water | 28 | | Furni | 3,000 G |
-| Stone Axe | Kongol | Earth | 31 | | Zenebatos | 3,000 G |
+| Magma Edge | Dart | Fire | 25 | | Furni | 3,000 G |
+| Umbral Estoc | Rose | Dark | 33 | | Furni | 3,000 G |
+| Radiant Bow | Shana, Miranda | Light | 22 | Hit +20 | Furni | 3,000 G |
+| Tidal Maul | Meru | Water | 28 | | Furni | 3,000 G |
+| Granite Axe | Kongol | Earth | 31 | | Zenebatos | 3,000 G |
 | Buster+ (7 elements) | Rose | One each | 70 | Magic attack 10, SP gain +25% | Ulara | 3,000 G |
 | Great Sabre | Rose | — | 70 | | Ulara | 2,500 G |
 
@@ -270,33 +270,33 @@ Prices are shop prices; every weapon below can be forged.
 
 | Item | Slot | Worn by | Stats | Where | Price |
 | --- | --- | --- | --- | --- | --- |
-| Sage's Shield | Accessory | All | Magic defence 8 | Bale | 200 G |
-| Thief's Shoes | Boots | All | Escape +50% | Bale | 200 G |
-| Heavy Robe | Armour | Women | Defence 20, magic defence 20, evasion 5 / 5 | Lohan | 150 G |
+| Mystic Buckler | Accessory | All | Magic defence 8 | Bale | 200 G |
+| Rogue's Slippers | Boots | All | Escape +50% | Bale | 200 G |
+| Thick Robe | Armour | Women | Defence 20, magic defence 20, evasion 5 / 5 | Lohan | 150 G |
 | Swift Boots | Boots | Men | Speed 5, defence 10, magic defence 10, evasion 5 | Lohan | 1,500 G |
-| Velvet Dress | Armour | Women | Defence 27, magic defence 16, +2 MP when hit | Donau | 250 G |
-| Templar Shield | Accessory | All | Defence 16 | Fletz accessory shop | 300 G |
-| Wizard Shield | Accessory | All | Magic defence 14 | Fletz accessory shop | 300 G |
-| Magical Sollerets | Boots | All | Defence 18, magic defence 9 | Wingly Forest | 600 G |
-| Magical Chausses | Boots | All | Evasion 15 / 15 | Wingly Forest | 600 G |
-| Master's Headband | Helmet | Haschel | Magic attack 25, defence 11, magic defence 11, +10 SP when hit | Vellweb | 200 G |
-| Attack Horn | Accessory | All | Attack 30, magic attack 30 | Deningrad | 8,000 G |
-| Defense Horn | Accessory | All | Defence 30, magic defence 30 | Deningrad | 8,000 G |
-| Titan Ring | Accessory | All | Attack 30 | Ulara, Moon | 600 G |
-| Wingly Suit | Armour | Meru | Defence 42, magic defence 42, MP +10%, MP each turn, +2 MP and +10 SP when hitting or hit | Ulara | 1,000 G |
-| Polter Helm | Helmet | All | Magic attack 35, defence 10, magic defence 10, HP +15%, MP +10%, evasion 5 / 5; drains HP | Drop | — |
-| Polter Armor | Armour | All | Defence 60, magic defence 40, HP +15%, +5 MP and SP when hitting or hit; drains HP | Drop | — |
-| God Devourer / God Eater | Armour | Men / Women | Defence 50, magic defence 50, attack 5, magic attack 5, evasion 5 / 5, 10% chance to revive | Medal Exchange | 35 medals |
-| God's Crown | Helmet | All | Magic attack 50, magic defence 10, hit +25, MP +20% | Medal Exchange | 30 medals |
-| God Speed | Boots | All | Speed 25, defence 10, evasion 10 / 10, HP +20% | Medal Exchange | 30 medals |
-| God Slayer | Accessory | All | Attack, magic attack, defence, magic defence +12, speed 10 | Medal Exchange | 40 medals |
+| Moonsilk Dress | Armour | Women | Defence 27, magic defence 16, +2 MP when hit | Donau | 250 G |
+| Bastion Charm | Accessory | All | Defence 16 | Fletz accessory shop | 300 G |
+| Arcane Charm | Accessory | All | Magic defence 14 | Fletz accessory shop | 300 G |
+| Runed Sollerets | Boots | All | Defence 18, magic defence 9 | Wingly Forest | 600 G |
+| Runed Chausses | Boots | All | Evasion 15 / 15 | Wingly Forest | 600 G |
+| Grandmaster's Band | Helmet | Haschel | Magic attack 25, defence 11, magic defence 11, +10 SP when hit | Vellweb | 200 G |
+| War Horn | Accessory | All | Attack 30, magic attack 30 | Deningrad | 8,000 G |
+| Ward Horn | Accessory | All | Defence 30, magic defence 30 | Deningrad | 8,000 G |
+| Colossus Ring | Accessory | All | Attack 30 | Ulara, Moon | 600 G |
+| Skyborn Suit | Armour | Meru | Defence 42, magic defence 42, MP +10%, MP each turn, +2 MP and +10 SP when hitting or hit | Ulara | 1,000 G |
+| Wraith Helm | Helmet | All | Magic attack 35, defence 10, magic defence 10, HP +15%, MP +10%, evasion 5 / 5; drains HP | Drop | — |
+| Wraith Mail | Armour | All | Defence 60, magic defence 40, HP +15%, +5 MP and SP when hitting or hit; drains HP | Drop | — |
+| Seraph Mail / Seraph Robe | Armour | Men / Women | Defence 50, magic defence 50, attack 5, magic attack 5, evasion 5 / 5, 10% chance to revive | Medal Exchange | 35 medals |
+| Seraph Circlet | Helmet | All | Magic attack 50, magic defence 10, hit +25, MP +20% | Medal Exchange | 30 medals |
+| Seraph Greaves | Boots | All | Speed 25, defence 10, evasion 10 / 10, HP +20% | Medal Exchange | 30 medals |
+| Seraph Sigil | Accessory | All | Attack, magic attack, defence, magic defence +12, speed 10 | Medal Exchange | 40 medals |
 
 **Items**
 
 | Item | Effect | Where |
 | --- | --- | --- |
-| Archangel's Prayer | In battle: revives an ally with full HP. Never used up. | Divine Dragoon Ghost (100%), Medal Exchange (100 medals) |
-| Rock Fireflies | From the menu: full HP and MP and cures status for the whole party | 12% drop in a few areas, Medal Exchange (3 medals) |
+| Eternal Prayer | In battle: revives an ally with full HP. Never used up. | Divine Dragoon Ghost (100%), Medal Exchange (100 medals) |
+| Glowmoss | From the menu: full HP and MP and cures status for the whole party | 12% drop in a few areas, Medal Exchange (3 medals) |
 | Forge Stone | Forges weapons to +1, +2, +3 | Battles, Medal Exchange (2 medals) |
 | Dragon Stone | Forges weapons to +4, +5 | Cursed Zones, bosses, Medal Exchange (6 medals) |
 | Arena Medal | Currency of the Medal Exchange | Arena |

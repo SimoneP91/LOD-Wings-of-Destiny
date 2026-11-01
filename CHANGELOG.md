@@ -9,7 +9,7 @@ First public release.
 - Elite battles and Cursed Zones, with the Phantom Ship always cursed.
 - The Forge: weapons +1 to +5 in every equipment shop, Forge Stones and Dragon Stones.
 - The Arena of Lohan: re-fight defeated bosses scaled to your level, three grades, Heirloom weapons, Arena Medals and the Medal Exchange.
-- New equipment: Wyrmling, Greater Wyrmling, Elder and Heirloom weapons, Busters, elemental weapons, new armour and accessories, the God set.
-- New items: Archangel's Prayer, Rock Fireflies, Forge Stone, Dragon Stone, Arena Medal.
+- New equipment: Wyrmling, Greater Wyrmling, Elder and Heirloom weapons, Busters, elemental weapons, new armour and accessories, the Seraph set.
+- New items: Eternal Prayer, Glowmoss, Forge Stone, Dragon Stone, Arena Medal.
 - Addition and Dragoon tweaks.
 - Options for EXP, gold and addition EXP multipliers, Elite chance and Cursed Zones.
