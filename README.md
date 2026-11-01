@@ -16,7 +16,7 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 - [The Forge](#the-forge)
 - [The Arena of Lohan](#the-arena-of-lohan)
 - [Equipment and items](#equipment-and-items)
-- [Lloyd compatibility](#lloyd-compatibility)
+- [What's next](#whats-next)
 - [FAQ and troubleshooting](#faq-and-troubleshooting)
 
 ## Features
@@ -38,7 +38,6 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 **Requirements**
 
 - Severed Chains 3.0.0 (tested on build 1816).
-- Optional: Lloyd Mod, for Lloyd's Dragoon magic (see [Lloyd compatibility](#lloyd-compatibility)).
 
 **Steps**
 
@@ -235,7 +234,7 @@ Prices are shop prices; every weapon below can be forged.
 | Blade | Dart | 15 | 30 | Fire, 55 / 15 |
 | Pike | Lavitz, Albert | 15 | 28 | Wind, 50 / 15 |
 | Bow | Shana, Miranda | 15 | 20 | Light, 32 / 30 |
-| Estoc | Rose, Lloyd | 15 | 32 | Dark, 65 / 15 |
+| Estoc | Rose | 15 | 32 | Dark, 65 / 15 |
 | Knuckle | Haschel | 23 | 33 | Thunder, 40 / 10 |
 | Mace / Hammer | Meru | 14 | 28 | Water, 52 / 25 |
 | Axe | Kongol | 48 | 58 | Earth, 65 / 10 |
@@ -248,7 +247,7 @@ Prices are shop prices; every weapon below can be forged.
 | Tide Fang | Dart | Water | 25 | Poison | |
 | Gale Lance | Lavitz, Albert | Wind | 30 | Fear | Speed +5 |
 | Nightveil Bow | Shana, Miranda | Dark | 35 | Poison | |
-| Dawn Rapier | Rose, Lloyd | Light | 25 | Confusion | Speed +5 |
+| Dawn Rapier | Rose | Light | 25 | Confusion | Speed +5 |
 | Storm Knuckles | Haschel | Thunder | 25 | Stun | |
 | Wave Mallet | Meru | Water | 10 | Confusion | |
 | Giant's Cleaver | Kongol | Earth | 30 | Fear | Speed +10 |
@@ -257,15 +256,15 @@ Prices are shop prices; every weapon below can be forged.
 
 | Weapon | Used by | Element | Attack | Extras | Where | Price |
 | --- | --- | --- | --- | --- | --- | --- |
-| Fire / Aqua / Wind / Earth / Bolt / Light / Dark Buster | Rose, Lloyd | One each | 35 | Magic attack 5, SP gain +25% | Lohan | 1,000 G |
-| Sabre | Rose, Lloyd | — | 35 | | Lohan | 800 G |
+| Fire / Aqua / Wind / Earth / Bolt / Light / Dark Buster | Rose | One each | 35 | Magic attack 5, SP gain +25% | Lohan | 1,000 G |
+| Sabre | Rose | — | 35 | | Lohan | 800 G |
 | Lava Blade | Dart | Fire | 25 | | Furni | 3,000 G |
-| Void Estoc | Rose, Lloyd | Dark | 33 | | Furni | 3,000 G |
+| Void Estoc | Rose | Dark | 33 | | Furni | 3,000 G |
 | Spectral Arrow | Shana, Miranda | Light | 22 | Hit +20 | Furni | 3,000 G |
 | Hydro Hammer | Meru | Water | 28 | | Furni | 3,000 G |
 | Stone Axe | Kongol | Earth | 31 | | Zenebatos | 3,000 G |
-| Buster+ (7 elements) | Rose, Lloyd | One each | 70 | Magic attack 10, SP gain +25% | Ulara | 3,000 G |
-| Great Sabre | Rose, Lloyd | — | 70 | | Ulara | 2,500 G |
+| Buster+ (7 elements) | Rose | One each | 70 | Magic attack 10, SP gain +25% | Ulara | 3,000 G |
+| Great Sabre | Rose | — | 70 | | Ulara | 2,500 G |
 
 **Armour, helmets, boots and accessories**
 
@@ -309,24 +308,15 @@ Prices are shop prices; every weapon below can be forged.
 - Destroyer Mace moves from the Moon to Rouge.
 - Moon item shop: Spirit Potion.
 
-## Lloyd compatibility
+## What's next
 
-With Lloyd Mod installed, Wings of Destiny gives Lloyd a full Dragoon kit: sword techniques and elemental magic, unlocked by Dragoon level. Without Lloyd Mod, nothing changes.
+Planned for future versions, in rough order:
 
-| Dragoon level | Magic (Magic menu) | Technique (Attack menu) |
-| --- | --- | --- |
-| 1 | Spinning Gale — wind, one target | Running Slash, Spectral Sword, Sword Rush |
-| 2 | Fatal Blizzard — water, all enemies | Aerial Crash |
-| 3 | Trans Light — light, one target | Ball Barrage |
-| 4 | Rave Twister — wind, all enemies | — |
-| 5 | — | Sigil of Explosion |
-| 6 | Dancing Ray — dark, all enemies | — |
-| 7 | — | Draconic Impale |
-
-- Dragoon form gives +200% attack, magic attack, defence and magic defence from Dragoon level 1; higher levels unlock skills rather than stats.
-- Lloyd starts every battle with 0 MP and builds it with Running Slash and Sword Rush, then spends it on the stronger techniques.
-- Plain Dragoon attacks deal half damage to monsters but give +80 SP per hit. Lloyd stays transformed for one turn per 100 SP.
-- The first use of Aerial Crash, Ball Barrage, Sigil of Explosion and Draconic Impale in a transformation gives a large SP bonus.
+1. **New Game+** — start over keeping your equipment, forged weapons and items, with monsters that scale to your party's level, as the Arena already does.
+2. **Dragoon rebalance** — Dragoon magic and Dragoon additions tuned for Hard difficulty and New Game+.
+3. **Weapons with unique effects** — weapons that do more than add numbers, with effects tied to elements, remaining HP or SP.
+4. **New Arena rewards** — items that permanently raise a stat by 1 and a unique accessory for each character, in the Medal Exchange.
+5. **Quality of life** — a dedicated Forge menu separate from the Buy list, and shop lists that refresh without leaving the shop.
 
 ## FAQ and troubleshooting
 
@@ -341,7 +331,6 @@ With Lloyd Mod installed, Wings of Destiny gives Lloyd a full Dragoon kit: sword
 **Known limitations**
 
 - Arena bosses play their in-battle scenes, including death scenes, as in the story.
-- Lloyd's Ball Barrage does not get its extra damage multiplier.
 - Shop lists refresh only when you enter the shop.
 
 **Reporting a problem**
