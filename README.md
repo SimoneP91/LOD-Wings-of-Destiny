@@ -16,6 +16,7 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 - [The Forge](#the-forge)
 - [The Arena](#the-arena)
 - [Equipment and items](#equipment-and-items)
+- [New Game+](#new-game)
 - [What's next](#whats-next)
 - [Building from source](#building-from-source)
 - [FAQ and troubleshooting](#faq-and-troubleshooting)
@@ -310,11 +311,66 @@ Prices are shop prices; every weapon below can be forged.
 - Destroyer Mace moves from the Moon to Rouge.
 - Moon item shop: Spirit Potion.
 
+## New Game+
+
+**Starting a New Game+**
+
+When you reach the "The End" screen after the credits, Wings of Destiny creates a save called **New Game+** in the same campaign. Load it to start again from the beginning of disc 1. Each following cycle creates "New Game+ 2", "New Game+ 3" and so on.
+
+**What you keep and what starts over**
+
+| You keep | Starts over |
+| --- | --- |
+| Levels, EXP, Dragoon levels, magic | Gold (back to 20 G) |
+| Mastered additions | The story, chests and key items |
+| Equipped gear and everything in your bag, forged weapons and Heirlooms included | Dragoon Spirits: you transform again when the story gives them back |
+| Forge Stones, Dragon Stones and Arena Medals | The Arena: bosses to unlock again, first ×3 bonus available again |
+
+The party starts with Dart alone; the others join with the story, at the level you left them.
+
+- Lavitz starts at least at Albert's level, Shana at least at Miranda's.
+- When Albert and Miranda join, they keep their own data and take the better value from Lavitz and Shana for level, Dragoon level and each addition. Each keeps their own equipment.
+
+**Monsters**
+
+- Monsters always use the Hard values, whatever the Difficulty option.
+- HP, attack and magic attack are multiplied by your party's average level ÷ the expected level for the disc (10, 22, 30 and 40 for discs 1 to 4), never below ×1. Example: party at level 60 on disc 1 = ×6.
+- EXP and gold are multiplied by the same amount.
+- Each cycle after the first adds +25%: New Game++ ×1.25, New Game+++ ×1.5.
+- Elite battles and Cursed Zones are 10% stronger (HP, attack, defence); their chance and rewards don't change.
+- The Arena uses the same scaling, based on the disc of the boss. The first ×3 win gives double medals; a set of New Game+ weapons is planned in place of the Heirlooms.
+
+**Dragoon magic**
+
+- Dragoon magic does 30% more damage and healing in New Game+, and 30% more for each following cycle: ×1.3, ×1.6, ×1.9 and so on. Dragon summons, Divine Dragoon magic and Lloyd's magic included.
+- Healing stays within maximum HP: in practice Gates of Heaven revives at 65% instead of 50%.
+- Buffs, status effects and MP costs don't change.
+
+**EX additions**
+
+In New Game+ every character with additions (Shana and Miranda excluded) can learn two EX additions, enhanced versions of their last two additions, one after the other:
+
+| Character | First EX | Second EX |
+| --- | --- | --- |
+| Dart | Moon Strike EX | Blazing Dynamo EX |
+| Lavitz / Albert | Gust of Wind Dance EX | Flower Storm EX |
+| Rose | Hard Blade EX | Demon's Dance EX |
+| Haschel | Hex Hammer EX | Omni-Sweep EX |
+| Meru | Cat's Cradle EX | Perky Step EX |
+| Kongol | Inferno EX | Bone Crush EX |
+
+- **First EX:** unlocks when all the character's original additions are mastered, the final one included. If you mastered them in your previous playthrough, it is there from the start.
+- **Second EX:** unlocks when the first EX reaches level 10.
+- Levels 1 to 10, same animation as the original. They need twice the uses of an original addition to level up, and every hit has a timing window one frame shorter.
+- Each EX starts above what comes before it, in both damage and SP: the first EX at level 1 beats the original final addition mastered, the second EX at level 1 beats the first EX at level 10. Each level adds 2.5%.
+- Example, Dart: Blazing Dynamo mastered 450 damage / 150 SP; Moon Strike EX 461 / 154 at level 1, 562 / 188 at level 10; Blazing Dynamo EX 577 / 192 at level 1, 703 / 234 at level 10.
+- They don't count towards unlocking a character's final addition.
+
 ## What's next
 
 Planned for future versions, in rough order:
 
-1. **New Game+** — start over keeping your equipment, forged weapons and items, with monsters that scale to your party's level, as the Arena already does.
+1. **New Game+ weapons** — a set of weapons for the first ×3 Arena wins in New Game+.
 2. **Dragoon rebalance** — Dragoon magic and Dragoon additions tuned for Hard difficulty and New Game+.
 3. **Weapons with unique effects** — weapons that do more than add numbers, with effects tied to elements, remaining HP or SP.
 4. **New Arena rewards** — items that permanently raise a stat by 1 and a unique accessory for each character, in the Medal Exchange.

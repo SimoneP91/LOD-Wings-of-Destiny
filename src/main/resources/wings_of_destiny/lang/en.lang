@@ -2,7 +2,7 @@
 wings_of_destiny.name=Wings of Destiny
 
 wings_of_destiny.config.difficulty.label=[WoD] Difficulty
-wings_of_destiny.config.difficulty.help=Standard: slightly harder than retail.\nHard: a full rebalance, meant for a second playthrough.
+wings_of_destiny.config.difficulty.help=Standard: slightly harder than retail.\nHard: a full rebalance, meant for a second playthrough.\nNew Game+ always uses Hard.
 wings_of_destiny.config.difficulty.STANDARD=Standard
 wings_of_destiny.config.difficulty.HARD=Hard
 
@@ -196,3 +196,19 @@ wings_of_destiny.equipment.giants_cleaver.description=Earth. 25%% fear on hit.\n
 wings_of_destiny.items.arena_medal.name=Arena Medal
 wings_of_destiny.items.arena_medal.description=Won in the Arena.\nTrade them in Lohan.
 wings_of_destiny.items.arena_medal.battle_description=
+
+# --- Additions EX (New Game+) ---
+wings_of_destiny.additions.moon_strike_ex.name=Moon Strike EX
+wings_of_destiny.additions.blazing_dynamo_ex.name=Blazing Dynamo EX
+wings_of_destiny.additions.gust_of_wind_dance_ex.name=Gust of Wind Dance EX
+wings_of_destiny.additions.flower_storm_ex.name=Flower Storm EX
+wings_of_destiny.additions.albert_gust_of_wind_dance_ex.name=Gust of Wind Dance EX
+wings_of_destiny.additions.albert_flower_storm_ex.name=Flower Storm EX
+wings_of_destiny.additions.hard_blade_ex.name=Hard Blade EX
+wings_of_destiny.additions.demons_dance_ex.name=Demon's Dance EX
+wings_of_destiny.additions.hex_hammer_ex.name=Hex Hammer EX
+wings_of_destiny.additions.omni_sweep_ex.name=Omni-Sweep EX
+wings_of_destiny.additions.cats_cradle_ex.name=Cat's Cradle EX
+wings_of_destiny.additions.perky_step_ex.name=Perky Step EX
+wings_of_destiny.additions.inferno_ex.name=Inferno EX
+wings_of_destiny.additions.bone_crush_ex.name=Bone Crush EX

@@ -21,6 +21,7 @@ import java.util.Map;
  *  - Standard: retail + 25% della differenza con la tabella Hard (per mostro e per statistica).
  *  - Hard: valori della tabella Hard, compresi elemento, immunita' elementale, resistenze e flag speciali.
  * I mostri senza riga nella tabella (segnaposto e boss con IA particolare) restano retail.
+ * In New Game+ si usa sempre Hard, qualunque sia l'opzione.
  */
 public class MonsterDifficulty {
   private static final Logger LOGGER = LogManager.getFormatterLogger(MonsterDifficulty.class);
@@ -66,7 +67,7 @@ public class MonsterDifficulty {
       return;
     }
 
-    if(WodConfigs.difficulty() == Difficulty.HARD) {
+    if(WodConfigs.difficulty() == Difficulty.HARD || wingsofdestiny.ngplus.NewGamePlus.active()) {
       event.maxHp = hard.hp;
       event.hp = hard.hp;
       event.attack = hard.at;

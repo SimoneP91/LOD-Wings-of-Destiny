@@ -91,7 +91,7 @@ public class Arena {
   }
 
   /** Livello medio dei personaggi nel party attivo. */
-  static int partyLevel() {
+  public static int partyLevel() {
     if(gameState_800babc8 == null) {
       return 1;
     }
@@ -107,7 +107,7 @@ public class Arena {
     return count == 0 ? 1 : Math.max(1, Math.round((float)total / count));
   }
 
-  static int disc() {
+  public static int disc() {
     return gameState_800babc8 == null ? 1 : gameState_800babc8.chapterIndex_98 + 1;
   }
 
@@ -292,6 +292,19 @@ public class Arena {
 
   // ---------------------------------------------------------------- battaglia
 
+  /** New Game+: boss da sbloccare di nuovo e bonus del primo x3 di nuovo disponibile. Le Heirloom vinte restano vinte. */
+  public static void resetForNewGamePlus() {
+    DEFEATED.clear();
+    X3_CLEARED.clear();
+    pending = null;
+    active = null;
+  }
+
+  /** Disco su cui scalare la battaglia in corso: quello del boss in Arena, altrimenti quello attuale. */
+  public static int battleDisc() {
+    return inArena() ? active.record.disc : disc();
+  }
+
   /** Grado della battaglia d'Arena in corso, 0 se non sei in Arena. */
   public static int activeGrade() {
     return inArena() ? active.grade : 0;
@@ -329,7 +342,8 @@ public class Arena {
     if(!inArena()) {
       return;
     }
-    final float g = active.grade * levelScale(active.record);
+    // In New Game+ la forza segue lo scaling del NG+ (NgScaling, disco del boss): qui solo il grado
+    final float g = active.grade * (wingsofdestiny.ngplus.NewGamePlus.active() ? 1.0f : levelScale(active.record));
     event.hp = Math.round(event.hp * g);
     event.maxHp = Math.round(event.maxHp * g);
     event.attack = Math.round(event.attack * g);
@@ -406,8 +420,8 @@ public class Arena {
       && (postBattleAction_800bc974 instanceof VictoryPostBattleActionInstance || postBattleAction_800bc974 instanceof BossKillPostBattleActionInstance)) {
       this.rewardChecked = true;
       final boolean firstX3 = active.grade == 3 && !X3_CLEARED.contains(active.boss);
-      // Heirloom: solo boss dal disco 2 in poi
-      if(firstX3 && active.record.disc >= 2) {
+      // Heirloom: solo boss dal disco 2 in poi, e non in New Game+ (li' arrivera' un set di armi suo)
+      if(firstX3 && active.record.disc >= 2 && !wingsofdestiny.ngplus.NewGamePlus.active()) {
         this.awardHeirloom();
       }
       // Medaglie: 1 / 2 / 4, doppie alla prima vittoria al x3

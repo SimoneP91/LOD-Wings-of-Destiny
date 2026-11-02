@@ -54,6 +54,10 @@ public class WingsOfDestiny {
   private final ForgeShop forgeShop = new ForgeShop();
   private final Arena arena = new Arena();
   private final ArenaShop arenaShop = new ArenaShop();
+  private final wingsofdestiny.ngplus.NewGamePlus newGamePlus = new wingsofdestiny.ngplus.NewGamePlus();
+  private final wingsofdestiny.ngplus.NgScaling ngScaling = new wingsofdestiny.ngplus.NgScaling();
+  private final wingsofdestiny.ngplus.ExAdditions exAdditions = new wingsofdestiny.ngplus.ExAdditions();
+  private final wingsofdestiny.ngplus.DragoonMagic dragoonMagic = new wingsofdestiny.ngplus.DragoonMagic();
   private final wingsofdestiny.compat.LegacyModCleanup legacyCleanup = new wingsofdestiny.compat.LegacyModCleanup();
   /** Integrazione con la Lloyd mod (solo se installata). */
   private Object lloydCompat;
@@ -78,6 +82,10 @@ public class WingsOfDestiny {
     GameEngine.EVENTS.register(this.forgeShop);
     GameEngine.EVENTS.register(this.arena);
     GameEngine.EVENTS.register(this.arenaShop);
+    GameEngine.EVENTS.register(this.newGamePlus);
+    GameEngine.EVENTS.register(this.ngScaling);
+    GameEngine.EVENTS.register(this.exAdditions);
+    GameEngine.EVENTS.register(this.dragoonMagic);
     GameEngine.EVENTS.register(this.legacyCleanup);
   }
 

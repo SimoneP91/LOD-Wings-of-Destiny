@@ -139,16 +139,23 @@ public class Challenge {
     }
   }
 
+  /** In New Game+ elite e zone maledette sono il 10% piu' forti (solo statistiche, non ricompense). */
+  private static final float NG_PLUS_BOOST = 1.1f;
+
+  private static float boost() {
+    return wingsofdestiny.ngplus.NewGamePlus.active() ? NG_PLUS_BOOST : 1.0f;
+  }
+
   private static float hpMult() {
-    return (elite ? ELITE_HP : 1.0f) * (cursedBattle ? CURSED_HP : 1.0f);
+    return (elite ? ELITE_HP * boost() : 1.0f) * (cursedBattle ? CURSED_HP * boost() : 1.0f);
   }
 
   private static float atkMult() {
-    return (elite ? ELITE_ATK : 1.0f) * (cursedBattle ? CURSED_ATK : 1.0f);
+    return (elite ? ELITE_ATK * boost() : 1.0f) * (cursedBattle ? CURSED_ATK * boost() : 1.0f);
   }
 
   private static float defMult() {
-    return (elite ? ELITE_DEF : 1.0f) * (cursedBattle ? CURSED_DEF : 1.0f);
+    return (elite ? ELITE_DEF * boost() : 1.0f) * (cursedBattle ? CURSED_DEF * boost() : 1.0f);
   }
 
   private static float rewardMult() {

@@ -33,8 +33,8 @@ public class ArenaEntry implements InventoryEntry<ArenaEntry> {
     }
     final String first = names.iterator().next();
     this.name = first + " x" + grade;
-    // Iscrizione = meta' dell'oro del boss, per grado, minimo 100G
-    this.cost = Math.max(100, Math.round(gold * 0.5f) * grade);
+    // Iscrizione = meta' dell'oro del boss, per grado, minimo 100G (in New Game+ l'oro del boss scala, l'iscrizione pure)
+    this.cost = Math.max(100, Math.round(gold * 0.5f * wingsofdestiny.ngplus.NgScaling.factorFor(record.disc)) * grade);
   }
 
   public int cost() {
@@ -59,7 +59,7 @@ public class ArenaEntry implements InventoryEntry<ArenaEntry> {
   @Override
   public String getDescriptionTranslationKey() {
     final boolean first = this.grade == 3 && !Arena.X3_CLEARED.contains(this.boss);
-    final boolean heirloom = first && this.record.disc >= 2;
+    final boolean heirloom = first && this.record.disc >= 2 && !wingsofdestiny.ngplus.NewGamePlus.active();
     final int medals = (this.grade == 3 ? 4 : this.grade) * (first ? 2 : 1);
     return "Scaled to your level, x" + this.grade + ".\nGold x" + this.grade + ", " + medals + " medals, no EXP." + (this.grade == 3 ? "\nDragon Stone." : "") + (heirloom ? "\nFirst win: Heirloom!" : "");
   }

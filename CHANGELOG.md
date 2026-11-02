@@ -7,6 +7,8 @@
 - Soul Eater, Wraith Helm and Wraith Mail no longer drain HP.
 - Fixed the "Cursed Zone" label sometimes disappearing while still in a cursed area.
 - Source code and build script published.
+- New Game+: a save created at "The End", carried-over characters and items, monsters scaled to the party's level, Hard values always on, stronger Elite battles and Cursed Zones, a fresh Arena, 14 EX additions and stronger Dragoon magic.
+- The Arena entry fee scales with the boss in New Game+.
 
 ## 0.1.0 beta — 2026-11-01
 
