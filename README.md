@@ -17,6 +17,7 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 - [The Arena of Lohan](#the-arena-of-lohan)
 - [Equipment and items](#equipment-and-items)
 - [What's next](#whats-next)
+- [Building from source](#building-from-source)
 - [FAQ and troubleshooting](#faq-and-troubleshooting)
 
 ## Features
@@ -93,7 +94,7 @@ When you target a monster, a bar under its name shows its current and maximum HP
 - Ten additions hit harder and give more SP as they level up: Volcano, Flower Storm (Lavitz and Albert), Hard Blade, More & More, Demon's Dance, Cat's Cradle, Pursuit, Inferno, Bone Crush. Perky Step is unchanged.
 - Shana and Miranda: Dragoon attack raised to 365%.
 - Wargod's Sash: SP gain +75% (was +50%). Spirit Ring: 30 SP per turn (was 20). Dancing Dagger: SP gain +50% (was none).
-- Wraith Helm and Wraith Mail drain 2% of maximum HP per piece at the start of each of the wearer's turns, never below 1 HP.
+- Soul Eater no longer drains HP each turn.
 - To leave Dragoon form at will, turn on Severed Chains' own *Extended Dragoon Actions* option.
 
 ## Elite battles and Cursed Zones
@@ -160,15 +161,16 @@ Bought or forged something new? Leave the shop and come back to refresh the list
 | Random battle | 10% | — |
 | Elite battle | 50% | — |
 | Cursed Zone battle | 10% | 3% |
-| Elite in a Cursed Zone | 50% | 30% |
-| Boss, Arena included | — | 1, guaranteed |
+| Elite in a Cursed Zone | 50% | 5% |
+| Story boss | — | — |
+| Arena ×3 | — | 1, guaranteed |
 | Story battle you cannot flee | — | — |
 
-Stones can also be bought with Arena Medals. If a boss victory leads straight into a cutscene, the Dragon Stone goes directly to your inventory.
+Stones can also be bought with Arena Medals. If a victory leads straight into a cutscene, the stone goes directly to your inventory.
 
 ## The Arena of Lohan
 
-The item shop of Lohan lets you re-fight any boss you have already beaten, scaled to your current level, for gold, Arena Medals, a Dragon Stone and — on the hardest grade — a unique Heirloom weapon.
+The item shop of Lohan lets you re-fight any boss you have already beaten, scaled to your current level, for gold and Arena Medals, plus a Dragon Stone and a unique Heirloom weapon on the hardest grade.
 
 **Unlocking bosses**
 
@@ -189,8 +191,8 @@ The boss's HP, attack and magic attack are multiplied by the grade and by how mu
 
 | Grade | Strength | Gold | Arena Medals | Dragon Stone | Heirloom |
 | --- | --- | --- | --- | --- | --- |
-| ×1 | ×1 × level ratio | ×1 | 1 | 1 | — |
-| ×2 | ×2 × level ratio | ×2 | 2 | 1 | — |
+| ×1 | ×1 × level ratio | ×1 | 1 | — | — |
+| ×2 | ×2 × level ratio | ×2 | 2 | — | — |
 | ×3 | ×3 × level ratio | ×3 | 4 (8 on the first win) | 1 | First win, bosses from disc 2 on |
 
 - Example: Urobolus beaten at level 7, challenged at level 14 on ×3 = six times its original strength.
@@ -206,7 +208,7 @@ Right after the challenges, the Lohan item shop lists items you buy with Arena M
 | --- | --- |
 | Forge Stone | 2 |
 | Glowmoss | 3 |
-| Dragon Stone | 6 |
+| Dragon Stone | 12 |
 | Seraph Circlet | 30 |
 | Seraph Greaves | 30 |
 | Seraph Mail | 35 |
@@ -284,8 +286,8 @@ Prices are shop prices; every weapon below can be forged.
 | Ward Horn | Accessory | All | Defence 30, magic defence 30 | Deningrad | 8,000 G |
 | Colossus Ring | Accessory | All | Attack 30 | Ulara, Moon | 600 G |
 | Skyborn Suit | Armour | Meru | Defence 42, magic defence 42, MP +10%, MP each turn, +2 MP and +10 SP when hitting or hit | Ulara | 1,000 G |
-| Wraith Helm | Helmet | All | Magic attack 35, defence 10, magic defence 10, HP +15%, MP +10%, evasion 5 / 5; drains HP | Drop | — |
-| Wraith Mail | Armour | All | Defence 60, magic defence 40, HP +15%, +5 MP and SP when hitting or hit; drains HP | Drop | — |
+| Wraith Helm | Helmet | All | Magic attack 35, defence 10, magic defence 10, HP +15%, MP +10%, evasion 5 / 5 | Drop | — |
+| Wraith Mail | Armour | All | Defence 60, magic defence 40, HP +15%, +5 MP and SP when hitting or hit | Drop | — |
 | Seraph Mail / Seraph Robe | Armour | Men / Women | Defence 50, magic defence 50, attack 5, magic attack 5, evasion 5 / 5, 10% chance to revive | Medal Exchange | 35 medals |
 | Seraph Circlet | Helmet | All | Magic attack 50, magic defence 10, hit +25, MP +20% | Medal Exchange | 30 medals |
 | Seraph Greaves | Boots | All | Speed 25, defence 10, evasion 10 / 10, HP +20% | Medal Exchange | 30 medals |
@@ -298,7 +300,7 @@ Prices are shop prices; every weapon below can be forged.
 | Eternal Prayer | In battle: revives an ally with full HP. Never used up. | Divine Dragoon Ghost (100%), Medal Exchange (100 medals) |
 | Glowmoss | From the menu: full HP and MP and cures status for the whole party | 12% drop in a few areas, Medal Exchange (3 medals) |
 | Forge Stone | Forges weapons to +1, +2, +3 | Battles, Medal Exchange (2 medals) |
-| Dragon Stone | Forges weapons to +4, +5 | Cursed Zones, bosses, Medal Exchange (6 medals) |
+| Dragon Stone | Forges weapons to +4, +5 | Cursed Zones, Arena ×3, Medal Exchange (12 medals) |
 | Arena Medal | Currency of the Medal Exchange | Arena |
 
 **Changes to existing shops**
@@ -317,6 +319,21 @@ Planned for future versions, in rough order:
 3. **Weapons with unique effects** — weapons that do more than add numbers, with effects tied to elements, remaining HP or SP.
 4. **New Arena rewards** — items that permanently raise a stat by 1 and a unique accessory for each character, in the Medal Exchange.
 5. **Quality of life** — a dedicated Forge menu separate from the Buy list, and shop lists that refresh without leaving the shop.
+
+## Building from source
+
+The full source code is in `src/`. To build the jar you need:
+
+- JDK 25
+- Severed Chains 3.0.0-1816 (the game jar and `libs/` folder are on the classpath)
+- Python 3 (generates the names of the forged weapons)
+- The Lloyd mod jar (only for the optional Lloyd compatibility)
+
+```sh
+SC=/path/to/SeveredChains JDK=/path/to/jdk-25 LLOYD_JAR=/path/to/lloyd-mod.jar ./build.sh
+```
+
+The result is `build/wings_of_destiny.jar`.
 
 ## FAQ and troubleshooting
 

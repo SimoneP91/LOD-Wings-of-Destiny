@@ -1,0 +1,401 @@
+# id,exp,gold,chance,item,fallbackChance,fallbackItem,name
+0,12,6,40,lod:pellet,8,lod:pellet,Mantis
+1,40,18,32,lod:meteor_fall,8,lod:meteor_fall,Scissorhands
+2,99,30,8,lod:mind_purifier,8,lod:mind_purifier,Spinninghead
+3,168,51,8,lod:spirit_potion,8,lod:spirit_potion,Sandworm
+4,14,9,40,lod:burn_out,10,lod:burn_out,Sea Dragon
+5,88,33,32,lod:spear_frost,8,lod:spear_frost,Land Skater
+6,110,33,8,lod:total_vanishing,8,lod:total_vanishing,Beastie Dragon
+7,216,60,8,lod:depetrifier,8,lod:depetrifier,Manticore
+8,4,6,40,lod:detonate_rock,10,lod:detonate_rock,Goblin
+9,180,48,2,lod:heavy_mace,2,lod:heavy_mace,Minotaur
+10,204,54,2,lod:spear_of_terror,2,lod:spear_of_terror,Hyper Skeleton
+11,150,51,2,lod:attack_badge,8,lod:depetrifier,Basilisk
+12,84,30,2,lod:knight_shield,2,lod:knight_shield,Flabby Troll
+13,12,12,8,lod:angels_prayer,8,lod:angels_prayer,Evil Spider
+14,40,18,8,lod:poison_needle,8,lod:poison_needle,Spider Urchin
+15,18,9,2,lod:fake_power_wrist,2,lod:fake_power_wrist,Strong Man
+16,48,21,8,lod:angels_prayer,8,lod:angels_prayer,Dragonfly
+17,20,9,32,lod:burn_out,8,lod:burn_out,Hell Hound
+18,66,30,8,lod:total_vanishing,8,lod:total_vanishing,Death
+19,18,15,2,lod:beast_fang,2,lod:beast_fang,Lizard Man
+20,144,51,8,lod:healing_potion,8,lod:healing_potion,White Ape
+21,5,6,10,lod:healing_potion,10,lod:healing_potion,Assassin Cock
+22,15,12,20,lod:spear,20,lod:spear,Merman
+23,70,18,8,lod:mind_purifier,8,lod:mind_purifier,Glare
+24,3,3,10,lod:healing_potion,10,lod:healing_potion,Berserk Mouse
+25,180,60,2,lod:guard_badge,2,lod:knight_shield,Dragon Soldier
+26,48,15,8,lod:stunning_hammer,8,lod:stunning_hammer,Earth Shaker
+27,8,9,8,lod:healing_potion,8,lod:healing_potion,Vampire Kiwi
+28,11,8,10,lod:body_purifier,10,lod:body_purifier,Myconido
+29,44,24,24,lod:down_burst,8,lod:down_burst,Roc
+30,108,42,8,lod:healing_potion,8,lod:healing_potion,Gnome
+31,132,42,8,lod:attack_ball,8,lod:attack_ball,Bowling
+32,110,27,32,lod:fatal_blizzard,8,lod:fatal_blizzard,Freeze Knight
+33,13,12,10,lod:spirit_cloak,10,lod:spirit_cloak,Fire Spirit
+34,400,51,24,lod:flash_hall,8,lod:flash_hall,Mad Skull
+35,16,12,10,lod:body_purifier,10,lod:body_purifier,Run Fast
+36,112,30,8,lod:body_purifier,8,lod:body_purifier,Canbria Dayfly
+37,120,45,24,lod:down_burst,8,lod:down_burst,Wyvern
+38,4,9,40,lod:pellet,10,lod:pellet,Trent
+39,117,21,8,lod:healing_fog,8,lod:healing_fog,Spring Hitter
+40,160,39,8,lod:healing_breeze,8,lod:healing_breeze,Guillotine
+41,143,30,8,lod:total_vanishing,8,lod:total_vanishing,Terminator
+42,0,600,100,lod:spirit_potion,100,lod:spirit_potion,OOPARTS
+43,81,24,8,lod:sun_rhapsody,8,lod:sun_rhapsody,Fairy
+44,90,36,8,lod:spirit_potion,2,lod:dancers_ring,Puck
+45,11,9,8,lod:angels_prayer,8,lod:angels_prayer,Mole
+46,8,6,8,lod:healing_potion,8,lod:healing_potion,Screaming Bat
+47,130,42,2,lod:platinum_collar,2,lod:platinum_collar,Succubus
+48,132,45,8,lod:stunning_hammer,8,lod:stunning_hammer,Mammoth
+49,135,42,2,wings_of_destiny:titan_ring,2,lod:beast_fang,MetalFang
+50,96,21,32,lod:rave_twister,8,lod:rave_twister,Windy Weasel
+51,96,60,8,lod:attack_ball,8,lod:attack_ball,Wounded Bear
+52,32,15,8,lod:mind_purifier,8,lod:mind_purifier,Erupting Chick
+53,64,24,8,lod:angels_prayer,8,lod:angels_prayer,Flying Rat
+54,3000,0,50,lod:rainbow_dress,10,lod:rainbow_dress,Rainbow Bird
+55,20,12,32,lod:detonate_rock,8,lod:detonate_rock,Living Statue
+56,165,24,2,lod:magical_ring,8,lod:body_purifier,Madman
+57,120,36,2,lod:giganto_ring,2,lod:giganto_ring,Wildman
+58,17,15,32,lod:dark_mist,8,lod:dark_mist,Gargoyle
+59,10,6,32,lod:spinning_gale,8,lod:spinning_gale,Crescent Bee
+60,120,24,10,lod:healing_fog,10,lod:healing_fog,Jelly
+61,140,42,8,lod:attack_ball,8,lod:attack_ball,Spiky Beetle
+62,180,33,10,lod:mind_purifier,10,lod:mind_purifier,Slug
+63,104,36,8,lod:angels_prayer,8,lod:angels_prayer,Witch
+64,10,9,2,lod:poison_guard,2,lod:poison_guard,Ugly Balloon
+65,156,51,24,lod:flash_hall,8,lod:flash_hall,Maximum Volt
+66,22,27,2,lod:sapphire_pin,2,lod:sapphire_pin,Crystal Golem
+67,99,39,2,lod:guard_badge,2,lod:guard_badge,Rocky Turtle
+68,17,6,40,lod:pellet,10,lod:pellet,Crocodile
+69,36,21,8,lod:healing_potion,8,lod:healing_potion,Frilled Lizard
+70,72,24,40,lod:magical_hat,2,lod:magical_hat,Magician Bogy
+71,2000,120,24,lod:gravity_grabber,8,lod:gravity_grabber,Triceratops
+72,165,54,24,lod:frozen_jet,8,lod:frozen_jet,Stern Fish
+73,88,30,8,lod:recovery_ball,8,lod:recovery_ball,Forest Runner
+74,10,6,10,lod:healing_potion,10,lod:healing_potion,Magma Fish
+75,150,39,8,lod:body_purifier,8,lod:body_purifier,Scud Shark
+76,63,24,8,lod:healing_potion,8,lod:healing_potion,Screw Shell
+77,144,24,8,lod:healing_breeze,8,lod:healing_breeze,Potbelly
+78,187,48,2,lod:soul_eater,2,lod:soul_eater,Loner Knight
+79,55,15,2,lod:energy_girdle,2,lod:energy_girdle,Berserker
+80,176,54,2,lod:sages_cloak,2,lod:sages_cloak,Professor
+81,638,84,24,lod:spectral_flash,8,lod:spectral_flash,Psyche Druid
+82,60,12,8,lod:spirit_potion,2,lod:bandits_ring,Gangster
+83,50,18,32,lod:pellet,8,lod:pellet,Crafty Thief
+84,153,39,8,lod:mind_purifier,8,lod:mind_purifier,Undead
+85,60,21,2,lod:broad_sword,2,lod:broad_sword,Skeleton
+86,48,12,0,none,0,none,Will-o'-Wisp
+87,300,0,100,lod:night_raid,100,lod:night_raid,Cursed Jar
+88,20,24,8,lod:angels_prayer,8,lod:angels_prayer,Man Eating Bud
+89,126,36,15,lod:recovery_ball,15,lod:recovery_ball,Cactus
+90,15,9,8,lod:sun_rhapsody,8,lod:sun_rhapsody,Mandrake
+91,77,33,8,lod:spirit_potion,8,lod:spirit_potion,Mermaid
+92,17,9,8,lod:sun_rhapsody,8,lod:sun_rhapsody,Salamander
+93,380,51,2,lod:healing_rain,2,lod:healing_rain,Unicorn
+94,10,6,40,lod:dark_mist,10,lod:dark_mist,Orc
+95,80,36,8,lod:depetrifier,8,lod:depetrifier,Dark Elf
+96,100,27,8,lod:mind_purifier,8,lod:mind_purifier,Baby Dragon
+97,192,48,8,lod:panic_bell,8,lod:panic_bell,Harpy
+98,162,51,8,lod:spirit_potion,2,lod:dancers_boots,Cute Cat
+99,32,24,2,lod:bemusing_arrow,2,lod:bemusing_arrow,Arrow Shooter
+100,14,6,8,lod:mind_purifier,8,lod:mind_purifier,Red Hot
+101,170,30,8,lod:midnight_terror,8,lod:midnight_terror,Specter
+102,30,30,32,lod:gushing_magma,8,lod:gushing_magma,Sandora Elite
+103,24,15,20,lod:healing_potion,20,lod:healing_potion,Knight of Sandora
+104,11,6,10,lod:body_purifier,10,lod:body_purifier,Slime
+105,16,9,8,lod:mind_purifier,8,lod:mind_purifier,Fowl Fighter
+106,36,12,8,lod:panic_bell,8,lod:panic_bell,Killer Bird
+107,14,6,8,lod:body_purifier,8,lod:body_purifier,Plague Rat
+108,38,12,8,lod:body_purifier,8,lod:body_purifier,Stinger
+109,40,21,2,lod:sachet,2,lod:sachet,Piggy
+110,56,15,32,lod:spear_frost,8,lod:spear_frost,Sea Piranha
+111,72,18,8,lod:body_purifier,8,lod:body_purifier,Toad Stool
+112,80,21,32,lod:gushing_magma,8,lod:gushing_magma,Mega Sea Dragon
+113,90,39,8,lod:body_purifier,8,lod:body_purifier,Deadly Spider
+114,121,21,8,lod:spirit_potion,8,lod:spirit_potion,Icicle Ball
+115,12,6,8,lod:mind_purifier,8,lod:mind_purifier,Tricky Bat
+116,108,30,2,lod:bastard_sword,2,lod:bastard_sword,Mr.Bone
+117,72,18,8,lod:healing_fog,8,lod:healing_fog,Moss Dresser
+118,144,24,8,lod:total_vanishing,8,lod:total_vanishing,Death Purger
+119,154,21,8,lod:poison_needle,8,lod:poison_needle,Scorpion
+120,304,42,24,lod:frozen_jet,8,lod:frozen_jet,Trap Plant
+121,135,30,8,lod:angels_prayer,8,lod:angels_prayer,Aqua King
+122,128,30,8,lod:body_purifier,8,lod:body_purifier,Sky Chaser
+123,456,33,24,lod:down_burst,8,lod:down_burst,Air Combat
+124,0,0,100,lod:ruby_ring,100,lod:ruby_ring,Treasure Jar
+125,136,24,8,lod:recovery_ball,8,lod:recovery_ball,Human Hunter
+126,198,42,10,lod:angels_prayer,10,lod:angels_prayer,Mountain Ape
+127,360,42,24,lod:night_raid,8,lod:night_raid,Roulette Face
+128,228,24,24,lod:burning_wave,8,lod:burning_wave,Swift Dragon
+129,20,15,2,lod:morning_star,2,lod:morning_star,Hellena Warden
+130,25,30,50,lod:healing_potion,50,lod:healing_potion,Sandora Soldier
+131,14,9,8,lod:healing_potion,8,lod:healing_potion,Sandora Soldier
+132,11,12,10,lod:sun_rhapsody,10,lod:sun_rhapsody,Sandora Soldier
+133,24,21,2,lod:spear,2,lod:spear,Senior Warden
+134,6,9,0,none,0,none,Hellena Warden
+135,17,9,100,lod:attack_ball,100,lod:attack_ball,Commander
+136,1000,0,0,none,0,none,Blue Bird
+137,0,1000,100,lod:phoenix_plume,100,lod:phoenix_plume,Red Bird
+138,0,300,10,lod:elude_cloak,10,lod:elude_cloak,Yellow Bird
+139,1000,300,100,lod:moon_serenade,100,lod:moon_serenade,Lucky Jar
+140,0,0,0,none,0,none,??? (Terminator ?)
+141,0,0,0,none,0,none,???
+142,0,0,0,none,0,none,???
+143,0,0,0,none,0,none,Madman
+144,165,24,8,lod:body_purifier,8,lod:body_purifier,Madman
+145,165,24,8,lod:body_purifier,8,lod:body_purifier,Madman
+146,14,6,8,lod:mind_purifier,8,lod:mind_purifier,Red Hot
+147,14,6,8,lod:mind_purifier,8,lod:mind_purifier,Red Hot
+148,11,6,10,lod:body_purifier,10,lod:body_purifier,Madman
+149,11,6,10,lod:body_purifier,10,lod:body_purifier,Madman
+150,13,12,2,lod:spirit_cloak,2,lod:spirit_cloak,Fire Spirit
+151,13,12,2,lod:spirit_cloak,2,lod:spirit_cloak,Fire Spirit
+152,170,30,8,lod:midnight_terror,8,lod:midnight_terror,Specter
+153,170,30,8,lod:midnight_terror,8,lod:midnight_terror,Specter
+154,48,12,0,none,0,none,Will-o'-Wisp
+155,48,12,0,none,0,none,Will-o'-Wisp
+156,0,0,0,none,0,none,Will-o'-Wisp (No name)
+157,10,6,10,lod:healing_potion,10,lod:healing_potion,Magma Fish
+158,10,6,10,lod:healing_potion,10,lod:healing_potion,Magma Fish
+159,0,0,0,none,0,none,Magma Fish (No name)
+160,17,9,8,lod:sun_rhapsody,8,lod:sun_rhapsody,Salamander (No name)
+161,17,9,8,lod:sun_rhapsody,8,lod:sun_rhapsody,Salamander (No name)
+162,0,0,0,none,0,none,Crash
+163,0,0,0,none,0,none,Crash
+164,0,0,0,none,0,none,N/A
+165,0,0,0,none,0,none,N/A
+166,0,0,0,none,0,none,N/A
+167,0,0,0,none,0,none,N/A
+168,0,0,0,none,0,none,N/A
+169,0,0,0,none,0,none,N/A
+170,0,0,0,none,0,none,N/A
+171,0,0,0,none,0,none,N/A
+172,0,0,0,none,0,none,N/A
+173,0,0,0,none,0,none,N/A
+174,0,0,0,none,0,none,N/A
+175,0,0,0,none,0,none,N/A
+176,0,0,0,none,0,none,N/A
+177,0,0,0,none,0,none,N/A
+178,0,0,0,none,0,none,N/A
+179,0,0,0,none,0,none,N/A
+180,0,0,0,none,0,none,N/A
+181,0,0,0,none,0,none,N/A
+182,0,0,0,none,0,none,N/A
+183,0,0,0,none,0,none,N/A
+184,0,0,0,none,0,none,N/A
+185,0,0,0,none,0,none,N/A
+186,0,0,0,none,0,none,N/A
+187,0,0,0,none,0,none,N/A
+188,0,0,0,none,0,none,N/A
+189,0,0,0,none,0,none,N/A
+190,0,0,0,none,0,none,N/A
+191,0,0,0,none,0,none,N/A
+192,0,0,0,none,0,none,N/A
+193,0,0,0,none,0,none,N/A
+194,0,0,0,none,0,none,N/A
+195,0,0,0,none,0,none,N/A
+196,0,0,0,none,0,none,N/A
+197,0,0,0,none,0,none,N/A
+198,0,0,0,none,0,none,N/A
+199,0,0,0,none,0,none,N/A
+200,0,0,0,none,0,none,N/A
+201,0,0,0,none,0,none,N/A
+202,0,0,0,none,0,none,N/A
+203,0,0,0,none,0,none,N/A
+204,0,0,0,none,0,none,N/A
+205,0,0,0,none,0,none,N/A
+206,0,0,0,none,0,none,N/A
+207,0,0,0,none,0,none,N/A
+208,0,0,0,none,0,none,N/A
+209,0,0,0,none,0,none,N/A
+210,0,0,0,none,0,none,N/A
+211,0,0,0,none,0,none,N/A
+212,0,0,0,none,0,none,N/A
+213,0,0,0,none,0,none,N/A
+214,0,0,0,none,0,none,N/A
+215,0,0,0,none,0,none,N/A
+216,0,0,0,none,0,none,N/A
+217,0,0,0,none,0,none,N/A
+218,0,0,0,none,0,none,N/A
+219,0,0,0,none,0,none,N/A
+220,0,0,0,none,0,none,N/A
+221,0,0,0,none,0,none,N/A
+222,0,0,0,none,0,none,N/A
+223,0,0,0,none,0,none,N/A
+224,0,0,0,none,0,none,N/A
+225,0,0,0,none,0,none,N/A
+226,0,0,0,none,0,none,N/A
+227,0,0,0,none,0,none,N/A
+228,0,0,0,none,0,none,N/A
+229,0,0,0,none,0,none,N/A
+230,0,0,0,none,0,none,N/A
+231,0,0,0,none,0,none,N/A
+232,0,0,0,none,0,none,N/A
+233,0,0,0,none,0,none,N/A
+234,0,0,0,none,0,none,N/A
+235,0,0,0,none,0,none,N/A
+236,0,0,0,none,0,none,N/A
+237,0,0,0,none,0,none,N/A
+238,0,0,0,none,0,none,Crash
+239,0,0,0,none,0,none,Crash
+240,0,0,0,none,0,none,Crash
+241,0,0,0,none,0,none,Crash
+242,0,0,0,none,0,none,Crash
+243,0,0,0,none,0,none,Crash
+244,0,0,0,none,0,none,Crash
+245,0,0,0,none,0,none,Crash
+246,0,0,0,none,0,none,Crash
+247,0,0,0,none,0,none,Crash
+248,0,0,0,none,0,none,Crash
+249,0,0,0,none,0,none,Crash
+250,0,0,0,none,0,none,Crash
+251,0,0,0,none,0,none,Crash
+252,0,0,0,none,0,none,Crash
+253,0,0,0,none,0,none,Merchant
+254,0,0,0,none,0,none,Master Tasman
+255,0,0,0,none,0,none,Rose
+256,38,40,100,lod:burn_out,100,lod:burn_out,Commander
+257,2,3,100,lod:healing_potion,100,lod:healing_potion,Knight of Sandora
+258,200,50,100,lod:healing_breeze,100,lod:healing_breeze,Sandora Elite
+259,0,0,100,lod:healing_potion,100,lod:healing_potion,Hellena Warden
+260,0,0,100,lod:healing_potion,100,lod:healing_potion,Senior Warden
+261,300,50,100,lod:knight_shield,100,lod:knight_shield,Fruegel
+262,2000,200,100,lod:gravity_grabber,100,lod:gravity_grabber,Fruegel
+263,0,0,0,none,0,none,Rodriguez
+264,0,0,0,none,0,none,Guftas
+265,300,50,100,lod:power_wrist,100,lod:power_wrist,Kongol
+266,2000,200,100,lod:wargod_calling,30,lod:wargod_calling,Kongol
+267,3000,200,0,none,0,none,Emperor Doel
+268,0,0,0,none,0,none,Dragoon Doel
+269,0,0,0,none,0,none,Lloyd
+270,12000,300,0,none,0,none,Lloyd
+271,0,0,0,none,0,none,Missing
+272,0,0,0,none,0,none,Missing
+273,0,0,0,none,0,none,Sandora Elite
+274,0,0,100,lod:pellet,8,lod:pellet,Crafty Thief
+275,0,0,100,lod:down_burst,100,lod:down_burst,Feyrbrand
+276,0,0,0,none,0,none,???
+277,0,0,0,none,0,none,Dummy Lloyd
+278,0,0,0,none,0,none,Crash
+279,7000,250,100,lod:frozen_jet,100,lod:frozen_jet,Regole
+280,0,0,0,none,0,none,Tentacle
+281,0,0,0,none,0,none,Crash
+282,0,0,0,none,0,none,Crash
+283,10000,300,100,lod:dragon_shield,20,lod:dragon_shield,Divine Dragon
+284,0,0,100,lod:gravity_grabber,100,lod:gravity_grabber,Divine Cannon
+285,0,0,100,lod:flash_hall,100,lod:flash_hall,Divine Ball
+286,0,0,0,none,0,none,Crash
+287,1200,100,100,lod:plate_mail,30,lod:plate_mail,Greham
+288,0,0,100,lod:silver_stone,100,lod:silver_stone,Shirley
+289,0,0,0,none,0,none,Shana
+290,0,0,0,none,0,none,Albert
+291,0,0,0,none,0,none,Crash
+292,0,0,0,none,0,none,Crash
+293,6000,200,0,none,0,none,Lenus
+294,0,0,100,lod:jeweled_crown,50,lod:jeweled_crown,Lenus
+295,6000,300,100,lod:blue_sea_stone,100,lod:blue_sea_stone,Damia
+296,6000,300,100,lod:jade_stone,100,lod:jade_stone,Syuveil
+297,6000,300,100,lod:golden_stone,100,lod:golden_stone,Belzac
+298,6000,300,100,lod:violet_stone,100,lod:violet_stone,Kanzas
+299,2000,600,100,lod:total_vanishing,100,lod:total_vanishing,Mappi
+300,0,0,100,lod:diamond_claw,25,lod:diamond_claw,Mappi
+301,5000,200,100,lod:soul_headband,25,lod:soul_headband,Gehrich
+302,0,0,0,none,0,none,Gorgaga
+303,0,0,0,none,0,none,Serfius
+304,0,0,0,none,0,none,Danton
+305,0,0,0,none,0,none,Atlow
+306,0,0,0,none,0,none,Freeze
+307,0,0,0,none,0,none,Crash
+308,600,100,100,lod:healing_potion,100,lod:healing_potion,Virage(head)
+309,0,0,100,lod:healing_potion,100,lod:healing_potion,Virage(body)
+310,0,0,100,lod:mind_purifier,100,lod:mind_purifier,Virage(arm)
+311,4500,200,100,lod:moon_serenade,100,lod:moon_serenade,Virage(head)
+312,0,0,0,none,0,none,Virage(arm)
+313,0,0,0,none,0,none,Virage(body)
+314,0,0,0,none,0,none,Freeze
+315,0,0,0,none,0,none,Freeze
+316,4000,200,100,lod:healing_rain,100,lod:healing_rain,S Virage(head)
+317,0,0,0,none,0,none,S Virage(body)
+318,0,0,0,none,0,none,S Virage(arm)
+319,0,0,0,none,0,none,Crash
+320,15000,300,0,none,0,none,S Virage(head)
+321,0,0,0,none,0,none,S Virage(arm)
+322,0,0,0,none,0,none,S Virage(body)
+323,0,0,0,none,0,none,Freeze
+324,0,0,0,none,0,none,Freeze
+325,1500,100,100,lod:bandits_ring,30,lod:bandits_ring,Drake the Bandit
+326,0,0,0,none,0,none,Wire
+327,0,0,0,none,0,none,Bursting Ball
+328,0,0,0,none,0,none,Freeze
+329,2000,100,100,lod:sachet,100,lod:sachet,Jiango
+330,0,0,0,none,0,none,???
+331,0,0,0,none,0,none,???
+332,400,50,100,lod:wargods_amulet,100,lod:wargods_amulet,Urobolus
+333,800,100,100,lod:red_eye_stone,100,lod:red_eye_stone,Fire Bird
+334,0,0,0,none,0,none,Volcano Ball
+335,9000,2000,100,lod:spectral_flash,100,lod:spectral_flash,Grand Jewel
+336,0,0,0,none,0,none,Virage(head)
+337,0,0,0,none,0,none,Virage(body)
+338,0,0,0,none,0,none,Virage(arm)
+339,0,0,100,lod:smoke_ball,0,none,Kamuy's tree
+340,6000,200,100,lod:night_raid,100,lod:night_raid,Ghost Commander
+341,0,0,0,none,0,none,Ghost Knight
+342,0,0,0,none,0,none,Mazo
+343,8000,0,100,lod:darkness_stone,100,lod:darkness_stone,Kamuy
+344,20000,20000,100,lod:phantom_shield,100,lod:phantom_shield,Faust
+345,0,0,0,none,0,none,Faust
+346,11000,250,100,lod:brass_knuckle,100,lod:brass_knuckle,Windigo
+347,0,0,0,none,0,none,Snow Cannon
+348,0,0,0,none,0,none,Heart
+349,6000,800,100,wings_of_destiny:polter_helm,0,none,Polter Helm
+350,0,0,100,wings_of_destiny:polter_armor,100,lod:smoke_ball,Polter Armor
+351,0,0,100,lod:soul_eater,100,lod:soul_eater,Polter Sword
+352,8000,4000,100,wings_of_destiny:archangels_prayer,100,lod:flash_hall,Divine Dragoon Ghost
+353,6000,300,100,lod:frozen_jet,100,lod:frozen_jet,Ghost Regole
+354,4000,200,100,lod:down_burst,100,lod:down_burst,GhostFB
+355,0,0,0,none,0,none,Missing (Melbu Texture)
+356,0,0,0,none,0,none,Missing (Tentacle Texture)
+357,0,0,0,none,0,none,Lloyd & Melbu (Crash)
+358,0,0,0,none,0,none,Freeze
+359,0,0,0,none,0,none,Freeze
+360,12000,300,0,none,0,none,Vector
+361,0,0,0,none,0,none,Selebus
+362,0,0,0,none,0,none,Kubila
+363,0,0,100,lod:healing_rain,100,lod:healing_rain,Zackwell
+364,12000,300,100,lod:halberd,50,lod:halberd,Lavitzs Spirit
+365,12000,300,100,lod:pretty_hammer,100,lod:pretty_hammer,Last Kraken
+366,0,0,0,none,0,none,Cleone
+367,0,0,0,none,0,none,Auto Complete
+368,13000,300,100,lod:healing_rain,100,lod:healing_rain,Caterpillar
+369,0,0,100,lod:moon_serenade,100,lod:moon_serenade,Pupa
+370,0,0,100,lod:sun_rhapsody,100,lod:sun_rhapsody,Imago
+371,6000,0,0,none,0,none,Death Rose
+372,0,0,0,none,0,none,Auto Complete
+373,6000,0,0,none,0,none,Claire
+374,0,0,0,none,0,none,Claire
+375,6000,0,100,lod:indoras_axe,100,lod:indoras_axe,Indora
+376,0,0,0,none,0,none,Shadow Blade
+377,0,0,0,none,0,none,Light Sword
+378,12000,0,0,none,0,none,Michael
+379,0,0,0,none,0,none,Michael (arm)
+380,0,0,0,none,0,none,Michael (core)
+381,6000,0,0,none,0,none,Dark Doel
+382,6000,0,0,none,0,none,Archangel
+383,0,0,100,lod:flash_hall,0,none,Dragon Spirit
+384,0,0,0,none,0,none,Dragon Spirit
+385,0,0,0,none,0,none,Dragon Spirit
+386,0,0,0,none,0,none,Missing Shana
+387,20000,400,0,none,0,none,Zieg Feld
+388,0,0,0,none,0,none,Melbu Frahma (1st)
+389,0,0,0,none,0,none,Tentacle
+390,0,0,0,none,0,none,Melbu Frahma (2nd)
+391,0,0,0,none,0,none,Melbu Frahma (3rd)
+392,0,0,0,none,0,none,Melbu Frahma (Bomb Star)
+393,0,0,0,none,0,none,Melbu Frahma (4th)
+394,0,0,0,none,0,none,Monster
+395,0,0,0,none,0,none,Tentacle
+396,0,0,0,none,0,none,Bomb Star (Melbu Frahma 1st)
+397,0,0,0,none,0,none,Monster
+398,0,0,0,none,0,none,Tentacle
+399,0,0,0,none,0,none,Crash

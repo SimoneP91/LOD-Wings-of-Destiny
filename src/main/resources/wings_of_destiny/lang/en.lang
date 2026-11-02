@@ -1,0 +1,198 @@
+# Wings of Destiny
+wings_of_destiny.name=Wings of Destiny
+
+wings_of_destiny.config.difficulty.label=[WoD] Difficulty
+wings_of_destiny.config.difficulty.help=Standard: slightly harder than retail.\nHard: a full rebalance, meant for a second playthrough.
+wings_of_destiny.config.difficulty.STANDARD=Standard
+wings_of_destiny.config.difficulty.HARD=Hard
+
+wings_of_destiny.config.xp_multiplier.label=[WoD] Battle EXP Multiplier
+wings_of_destiny.config.gold_multiplier.label=[WoD] Battle Gold Multiplier
+
+wings_of_destiny.config.addition_xp_multiplier.label=[WoD] Addition XP Multiplier
+wings_of_destiny.config.addition_xp_multiplier.help=Multiplies the addition XP gained in battle.\nAt x1 additions level up as in retail.
+
+wings_of_destiny.config.monster_hp_numbers.label=[WoD] Monster HP Numbers
+
+# --- Equipment ---
+wings_of_destiny.equipment.sages_shield.name=Mystic Buckler
+wings_of_destiny.equipment.sages_shield.description=Raises magical\ndefense by 8.
+wings_of_destiny.equipment.thiefs_shoes.name=Rogue's Slippers
+wings_of_destiny.equipment.thiefs_shoes.description=Increases escape\nrate by 50%%.
+wings_of_destiny.equipment.lava_blade.name=Magma Edge
+wings_of_destiny.equipment.lava_blade.description=Fire-based attack.
+wings_of_destiny.equipment.void_estoc.name=Umbral Estoc
+wings_of_destiny.equipment.void_estoc.description=Dark-based attack.
+wings_of_destiny.equipment.spectral_arrow.name=Radiant Bow
+wings_of_destiny.equipment.spectral_arrow.description=Light-based attack.
+wings_of_destiny.equipment.hydro_hammer.name=Tidal Maul
+wings_of_destiny.equipment.hydro_hammer.description=Water-based attack.
+wings_of_destiny.equipment.stone_axe.name=Granite Axe
+wings_of_destiny.equipment.stone_axe.description=Earth-based attack.
+wings_of_destiny.equipment.attack_horn.name=War Horn
+wings_of_destiny.equipment.attack_horn.description=Raises physical\n& magical\nattack by 30.
+wings_of_destiny.equipment.defense_horn.name=Ward Horn
+wings_of_destiny.equipment.defense_horn.description=Raises physical\n& magical\ndefense by 30.
+wings_of_destiny.equipment.heavy_robe.name=Thick Robe
+wings_of_destiny.equipment.heavy_robe.description=Raises evasion\nby 5%%.
+wings_of_destiny.equipment.velvet_dress.name=Moonsilk Dress
+wings_of_destiny.equipment.velvet_dress.description=Gain 2 MP\nwhen attacked.
+wings_of_destiny.equipment.templar_shield.name=Bastion Charm
+wings_of_destiny.equipment.templar_shield.description=Raises physical\ndefense by 16.
+wings_of_destiny.equipment.wizard_shield.name=Arcane Charm
+wings_of_destiny.equipment.wizard_shield.description=Raises magical\ndefense by 14.
+wings_of_destiny.equipment.magical_sollerets.name=Runed Sollerets
+wings_of_destiny.equipment.magical_sollerets.description=Sturdy magical\ngreaves.
+wings_of_destiny.equipment.magical_chausses.name=Runed Chausses
+wings_of_destiny.equipment.magical_chausses.description=Raises evasion\nby 15%%.
+wings_of_destiny.equipment.masters_headband.name=Grandmaster's Band
+wings_of_destiny.equipment.masters_headband.description=Gain 10 SP\nwhen attacked.
+wings_of_destiny.equipment.polter_helm.name=Wraith Helm
+wings_of_destiny.equipment.polter_helm.description=A helm worn\nby a restless\nspirit.
+wings_of_destiny.equipment.polter_armor.name=Wraith Mail
+wings_of_destiny.equipment.polter_armor.description=Armor worn\nby a restless\nspirit.
+wings_of_destiny.equipment.titan_ring.name=Colossus Ring
+wings_of_destiny.equipment.titan_ring.description=Raises physical\nattack by 30.
+wings_of_destiny.equipment.wingly_suit.name=Skyborn Suit
+wings_of_destiny.equipment.wingly_suit.description=Gain MP/SP on\nturn and attack.
+
+# --- Busters / Sabres ---
+wings_of_destiny.equipment.fire_buster.name=Fire Buster
+wings_of_destiny.equipment.fire_buster.description=Fire-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.aqua_buster.name=Aqua Buster
+wings_of_destiny.equipment.aqua_buster.description=Water-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.wind_buster.name=Wind Buster
+wings_of_destiny.equipment.wind_buster.description=Wind-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.earth_buster.name=Earth Buster
+wings_of_destiny.equipment.earth_buster.description=Earth-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.bolt_buster.name=Bolt Buster
+wings_of_destiny.equipment.bolt_buster.description=Thunder-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.light_buster.name=Light Buster
+wings_of_destiny.equipment.light_buster.description=Light-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.dark_buster.name=Dark Buster
+wings_of_destiny.equipment.dark_buster.description=Dark-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.sabre.name=Sabre
+wings_of_destiny.equipment.sabre.description=A reliable\nshort blade.
+wings_of_destiny.equipment.fire_buster_plus.name=Fire Buster+
+wings_of_destiny.equipment.fire_buster_plus.description=Fire-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.aqua_buster_plus.name=Aqua Buster+
+wings_of_destiny.equipment.aqua_buster_plus.description=Water-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.wind_buster_plus.name=Wind Buster+
+wings_of_destiny.equipment.wind_buster_plus.description=Wind-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.earth_buster_plus.name=Earth Buster+
+wings_of_destiny.equipment.earth_buster_plus.description=Earth-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.bolt_buster_plus.name=Bolt Buster+
+wings_of_destiny.equipment.bolt_buster_plus.description=Thunder-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.light_buster_plus.name=Light Buster+
+wings_of_destiny.equipment.light_buster_plus.description=Light-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.dark_buster_plus.name=Dark Buster+
+wings_of_destiny.equipment.dark_buster_plus.description=Dark-based attack.\nSP gain +25%%.
+wings_of_destiny.equipment.great_sabre.name=Great Sabre
+wings_of_destiny.equipment.great_sabre.description=A masterwork\nshort blade.
+wings_of_destiny.equipment.swift_boots.name=Swift Boots
+wings_of_destiny.equipment.swift_boots.description=Light boots that\nraise speed by 5.
+
+# --- Items ---
+wings_of_destiny.items.archangels_prayer.name=Eternal Prayer
+wings_of_destiny.items.archangels_prayer.description=Revitalizes and\nrecovers all HP\n(repeat).
+wings_of_destiny.items.archangels_prayer.battle_description=Revitalize & full HP (rep).
+wings_of_destiny.items.rock_fireflies.name=Glowmoss
+wings_of_destiny.items.rock_fireflies.description=Recovers all HP\nand MP and cures\nstatus for all.
+wings_of_destiny.items.rock_fireflies.battle_description=
+
+
+wings_of_destiny.config.elite_chance.label=[WoD] Elite Chance (%%)
+wings_of_destiny.config.elite_chance.help=Chance that a normal battle is Elite:\nstronger monsters, double EXP, gold and drop chance.\nNever on bosses or story battles. 0 = off.
+wings_of_destiny.config.cursed_zones.label=[WoD] Cursed Zones
+wings_of_destiny.config.cursed_zones.help=When you enter an area with monsters it may be cursed\nuntil you leave: stronger monsters, better rewards,\nmore Elite battles. The Phantom Ship is always cursed.
+wings_of_destiny.config.cursed_chance.label=[WoD] Cursed Zone Chance (%%)
+wings_of_destiny.config.cursed_chance.help=Chance that an area becomes cursed when you enter it.
+
+# --- Forge materials ---
+wings_of_destiny.items.forge_stone.name=Forge Stone
+wings_of_destiny.items.forge_stone.description=Used to forge\nweapons +1 to +3.
+wings_of_destiny.items.forge_stone.battle_description=
+wings_of_destiny.items.dragon_stone.name=Dragon Stone
+wings_of_destiny.items.dragon_stone.description=Used to forge\nweapons +4 and +5.
+wings_of_destiny.items.dragon_stone.battle_description=
+
+
+# --- Wyrmling ---
+wings_of_destiny.equipment.wyrmling_blade.name=Wyrmling Blade
+wings_of_destiny.equipment.wyrmling_blade.description=Young dragon steel.\nSP gain +20%%.
+wings_of_destiny.equipment.wyrmling_pike.name=Wyrmling Pike
+wings_of_destiny.equipment.wyrmling_pike.description=Young dragon steel.\nSP gain +20%%.
+wings_of_destiny.equipment.wyrmling_bow.name=Wyrmling Bow
+wings_of_destiny.equipment.wyrmling_bow.description=Young dragon steel.\nSP gain +20%%.
+wings_of_destiny.equipment.wyrmling_estoc.name=Wyrmling Estoc
+wings_of_destiny.equipment.wyrmling_estoc.description=Young dragon steel.\nSP gain +20%%.
+wings_of_destiny.equipment.wyrmling_knuckle.name=Wyrmling Knuckle
+wings_of_destiny.equipment.wyrmling_knuckle.description=Young dragon steel.\nSP gain +20%%.
+wings_of_destiny.equipment.wyrmling_mace.name=Wyrmling Mace
+wings_of_destiny.equipment.wyrmling_mace.description=Young dragon steel.\nSP gain +20%%.
+wings_of_destiny.equipment.wyrmling_axe.name=Wyrmling Axe
+wings_of_destiny.equipment.wyrmling_axe.description=Young dragon steel.\nSP gain +20%%.
+wings_of_destiny.equipment.greater_wyrmling_blade.name=Gr. Wyrmling Blade
+wings_of_destiny.equipment.greater_wyrmling_blade.description=Tempered dragon steel.\nSP gain +30%%.
+wings_of_destiny.equipment.greater_wyrmling_pike.name=Gr. Wyrmling Pike
+wings_of_destiny.equipment.greater_wyrmling_pike.description=Tempered dragon steel.\nSP gain +30%%.
+wings_of_destiny.equipment.greater_wyrmling_bow.name=Gr. Wyrmling Bow
+wings_of_destiny.equipment.greater_wyrmling_bow.description=Tempered dragon steel.\nSP gain +30%%.
+wings_of_destiny.equipment.greater_wyrmling_estoc.name=Gr. Wyrmling Estoc
+wings_of_destiny.equipment.greater_wyrmling_estoc.description=Tempered dragon steel.\nSP gain +30%%.
+wings_of_destiny.equipment.greater_wyrmling_knuckle.name=Gr. Wyrmling Knuckle
+wings_of_destiny.equipment.greater_wyrmling_knuckle.description=Tempered dragon steel.\nSP gain +30%%.
+wings_of_destiny.equipment.greater_wyrmling_mace.name=Gr. Wyrmling Mace
+wings_of_destiny.equipment.greater_wyrmling_mace.description=Tempered dragon steel.\nSP gain +30%%.
+wings_of_destiny.equipment.greater_wyrmling_axe.name=Gr. Wyrmling Axe
+wings_of_destiny.equipment.greater_wyrmling_axe.description=Tempered dragon steel.\nSP gain +30%%.
+
+# --- Elder weapons ---
+wings_of_destiny.equipment.elder_blade.name=Elder Blade
+wings_of_destiny.equipment.elder_blade.description=Fire-based attack.\nAn ancient dragon's fang.
+wings_of_destiny.equipment.elder_pike.name=Elder Pike
+wings_of_destiny.equipment.elder_pike.description=Wind-based attack.\nAn ancient dragon's fang.
+wings_of_destiny.equipment.elder_bow.name=Elder Bow
+wings_of_destiny.equipment.elder_bow.description=Light-based attack.\nAn ancient dragon's fang.
+wings_of_destiny.equipment.elder_estoc.name=Elder Estoc
+wings_of_destiny.equipment.elder_estoc.description=Dark-based attack.\nAn ancient dragon's fang.
+wings_of_destiny.equipment.elder_knuckle.name=Elder Knuckle
+wings_of_destiny.equipment.elder_knuckle.description=Thunder-based attack.\nAn ancient dragon's fang.
+wings_of_destiny.equipment.elder_hammer.name=Elder Hammer
+wings_of_destiny.equipment.elder_hammer.description=Water-based attack.\nAn ancient dragon's fang.
+wings_of_destiny.equipment.elder_axe.name=Elder Axe
+wings_of_destiny.equipment.elder_axe.description=Earth-based attack.\nAn ancient dragon's fang.
+
+# --- God set ---
+wings_of_destiny.equipment.god_devourer.name=Seraph Mail
+wings_of_destiny.equipment.god_devourer.description=10%% chance to\nrevive when KO.
+wings_of_destiny.equipment.god_eater.name=Seraph Robe
+wings_of_destiny.equipment.god_eater.description=10%% chance to\nrevive when KO.
+wings_of_destiny.equipment.gods_crown.name=Seraph Circlet
+wings_of_destiny.equipment.gods_crown.description=Raises max MP 20%%.
+wings_of_destiny.equipment.god_speed.name=Seraph Greaves
+wings_of_destiny.equipment.god_speed.description=Raises max HP 20%%\nand speed by 25.
+wings_of_destiny.equipment.god_slayer.name=Seraph Sigil
+wings_of_destiny.equipment.god_slayer.description=Raises all stats\nby 12.
+
+# --- Heirloom ---
+wings_of_destiny.equipment.ember_fang.name=Ember Fang
+wings_of_destiny.equipment.ember_fang.description=Fire. 25%% fear on hit.\nRecovers SP each turn.
+wings_of_destiny.equipment.tide_fang.name=Tide Fang
+wings_of_destiny.equipment.tide_fang.description=Water. 25%% poison.\nRecovers SP each turn.
+wings_of_destiny.equipment.gale_lance.name=Gale Lance
+wings_of_destiny.equipment.gale_lance.description=Wind. 25%% fear on hit.\nRecovers SP each turn.
+wings_of_destiny.equipment.nightveil_bow.name=Nightveil Bow
+wings_of_destiny.equipment.nightveil_bow.description=Dark. 25%% poison.\nRecovers SP each turn.
+wings_of_destiny.equipment.dawn_rapier.name=Dawn Rapier
+wings_of_destiny.equipment.dawn_rapier.description=Light. 25%% confusion.\nRecovers SP each turn.
+wings_of_destiny.equipment.storm_knuckles.name=Storm Knuckles
+wings_of_destiny.equipment.storm_knuckles.description=Thunder. 25%% stun.\nRecovers SP each turn.
+wings_of_destiny.equipment.wave_mallet.name=Wave Mallet
+wings_of_destiny.equipment.wave_mallet.description=Water. 25%% confusion.\nRecovers SP each turn.
+wings_of_destiny.equipment.giants_cleaver.name=Giant's Cleaver
+wings_of_destiny.equipment.giants_cleaver.description=Earth. 25%% fear on hit.\nRecovers SP each turn.
+
+wings_of_destiny.items.arena_medal.name=Arena Medal
+wings_of_destiny.items.arena_medal.description=Won in the Arena.\nTrade them in Lohan.
+wings_of_destiny.items.arena_medal.battle_description=

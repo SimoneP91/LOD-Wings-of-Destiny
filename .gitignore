@@ -1,2 +1,4 @@
 *.jar
 build/
+libs/
+__pycache__/
