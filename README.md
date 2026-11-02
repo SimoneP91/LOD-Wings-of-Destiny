@@ -1,6 +1,6 @@
 # Wings of Destiny
 
-A gameplay overhaul for **The Legend of Dragoon** on **Severed Chains 3.0**: tougher monsters, Elite battles and Cursed Zones, a weapon Forge, a boss Arena in Lohan and over 40 new pieces of equipment.
+A gameplay overhaul for **The Legend of Dragoon** on **Severed Chains 3.0**: tougher monsters, Elite battles and Cursed Zones, a weapon Forge, a boss Arena in every major town and over 40 new pieces of equipment.
 
 The story and its progression stay intact; Wings of Destiny adds reasons to explore, fight and come back. Every system can be tuned or turned off in the options.
 
@@ -14,7 +14,7 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 - [Difficulty and monsters](#difficulty-and-monsters)
 - [Elite battles and Cursed Zones](#elite-battles-and-cursed-zones)
 - [The Forge](#the-forge)
-- [The Arena of Lohan](#the-arena-of-lohan)
+- [The Arena](#the-arena)
 - [Equipment and items](#equipment-and-items)
 - [What's next](#whats-next)
 - [Building from source](#building-from-source)
@@ -29,8 +29,8 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 | Elite battles | Stronger enemies, double rewards | Any random battle |
 | Cursed Zones | Whole areas become dangerous and generous | Any area with monsters |
 | The Forge | Upgrade weapons from +1 to +5 | Every equipment shop |
-| The Arena | Re-fight defeated bosses, scaled to your level | Lohan item shop |
-| Arena Medals | Trade them for stones, rare items and the Seraph set | Lohan item shop |
+| The Arena | Re-fight defeated bosses, scaled to your level | Item shops of the major towns |
+| Arena Medals | Trade them for stones, rare items and the Seraph set | Item shops of the major towns |
 | New equipment | Wyrmling, Elder and Heirloom weapons, new armour and accessories | Shops, drops, Arena |
 | Reward tuning | EXP, gold and addition EXP multipliers | Options |
 
@@ -168,9 +168,9 @@ Bought or forged something new? Leave the shop and come back to refresh the list
 
 Stones can also be bought with Arena Medals. If a victory leads straight into a cutscene, the stone goes directly to your inventory.
 
-## The Arena of Lohan
+## The Arena
 
-The item shop of Lohan lets you re-fight any boss you have already beaten, scaled to your current level, for gold and Arena Medals, plus a Dragon Stone and a unique Heirloom weapon on the hardest grade.
+The item shop of every major town (Bale, Lohan, Kazas, Fletz, Donau, Fueno, Furni, Deningrad, the Wingly Forest, Vellweb, Ulara, Rouge and Zenebatos) lets you re-fight any boss you have already beaten, scaled to your current level, for gold and Arena Medals, plus a Dragon Stone and a unique Heirloom weapon on the hardest grade.
 
 **Unlocking bosses**
 
@@ -178,10 +178,10 @@ Every boss you defeat in the story is added to the Arena, with the battlefield y
 
 **Taking a challenge**
 
-1. Go to the **item shop** in Lohan and choose **Buy**. Challenges are at the top: "Urobolus x1", "Urobolus x2", "Urobolus x3".
+1. Go to the **item shop** of a major town and choose **Buy**. Challenges are at the top: "Urobolus x1", "Urobolus x2", "Urobolus x3".
 2. Pick one and pay the entry fee.
 3. Leave the shop: the battle starts on its own a moment later.
-4. Win or lose, you return to Lohan. Losing is not a game over: the party gets back up with 1 HP and you only lose the entry fee.
+4. Win or lose, you return to the town you signed up in. Losing is not a game over: the party gets back up with 1 HP and you only lose the entry fee.
 
 Leaving the area after signing up cancels the challenge and refunds the fee. The boss's in-battle scenes play as in the story, but nothing after the battle affects the story.
 
@@ -202,7 +202,7 @@ The boss's HP, attack and magic attack are multiplied by the grade and by how mu
 
 **Medal Exchange**
 
-Right after the challenges, the Lohan item shop lists items you buy with Arena Medals. Arena Medals are an inventory item.
+Right after the challenges, the same item shops list items you buy with Arena Medals. Arena Medals are an inventory item.
 
 | Item | Medals |
 | --- | --- |
@@ -339,7 +339,7 @@ The result is `build/wings_of_destiny.jar`.
 
 **I don't see the Forge in the shop.** Only weapons in your bag can be forged: unequip one, then leave and re-enter the shop. Forge entries are at the top of the Buy list.
 
-**I don't see Arena challenges.** Only bosses you defeated with Wings of Destiny installed are listed, in the item shop of Lohan.
+**I don't see Arena challenges.** Only bosses you defeated with Wings of Destiny installed are listed, in the item shops of the major towns.
 
 **An Arena boss is too easy.** Bosses beaten before the Arena existed record your level at your first challenge; from then on they grow with you.
 

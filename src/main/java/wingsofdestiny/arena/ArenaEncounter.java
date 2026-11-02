@@ -7,7 +7,7 @@ import static legend.game.Scus94491BpeSegment_800b.postBattleAction_800bc974;
 import static legend.game.sound.Audio.loadMusicPackage;
 
 /**
- * Copia di uno scontro con boss per l'Arena di Lohan:
+ * Copia di uno scontro con boss per l'Arena:
  * - dopo la battaglia si torna dove si era (niente spostamenti di trama);
  * - se perdi niente game over.
  */

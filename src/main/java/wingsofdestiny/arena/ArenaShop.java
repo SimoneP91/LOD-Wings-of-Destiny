@@ -23,13 +23,27 @@ import java.util.Map;
 
 import static legend.game.SItem.menuStack;
 
-/** Le sfide d'Arena compaiono nel negozio oggetti di Lohan. */
+/** Le sfide d'Arena e lo scambio medaglie compaiono nei negozi oggetti delle citta' principali. */
 public class ArenaShop {
-  private static final String SHOP = "lod:lohan_item_shop";
+  private static final java.util.Set<String> SHOPS = java.util.Set.of(
+    "lod:serdio_item_shop",      // Bale
+    "lod:lohan_item_shop",
+    "lod:kazas_fort_item_shop",
+    "lod:fletz_item_shop",
+    "lod:donau_item_shop",
+    "lod:fueno_item_shop",
+    "lod:furni_item_shop",
+    "lod:deningrad_item_shop",
+    "lod:wingly_forest_item_shop",
+    "lod:vellweb_item_shop",
+    "lod:ulara_item_shop",
+    "lod:rouge_item_shop",
+    "lod:zenebatos_item_shop"
+  );
 
   @EventListener(priority = Priority.LOWEST)
   public void shopContents(final ShopContentsEvent event) {
-    if(!SHOP.equals(event.shop.getRegistryId().toString())) {
+    if(!SHOPS.contains(event.shop.getRegistryId().toString())) {
       return;
     }
 

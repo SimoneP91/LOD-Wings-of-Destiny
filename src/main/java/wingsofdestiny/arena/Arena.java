@@ -56,9 +56,9 @@ import static legend.game.Scus94491BpeSegment_800b.submapId_800bd808;
 import static legend.lodmod.LodMod.HP_STAT;
 
 /**
- * Arena di Lohan.
+ * Arena.
  * - Ogni boss sconfitto (scontro "normale" con musica da boss) viene segnato nel save, col suo stage di battaglia.
- * - Al negozio oggetti di Lohan compaiono le sfide (x1/x2/x3); pagata l'iscrizione, la battaglia parte appena ti muovi.
+ * - Nei negozi oggetti delle citta' principali compaiono le sfide (x1/x2/x3); pagata l'iscrizione, la battaglia parte appena ti muovi.
  * - In Arena: HP e attacco x grado, niente EXP, oro x grado, drop originali garantiti; 1 Dragon Stone solo al grado x3 (da Challenge).
  * - I flag di trama vengono salvati prima e ripristinati dopo, cosi' il boss non puo' far avanzare/rompere la storia.
  */

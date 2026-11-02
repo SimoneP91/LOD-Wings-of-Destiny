@@ -21,7 +21,7 @@ public final class WodItems {
   public static final RegistryDelegate<Item> ROCK_FIREFLIES = REGISTRAR.register("rock_fireflies", RockFirefliesItem::new);
   /** Materiali della forgia */
   public static final RegistryDelegate<Item> FORGE_STONE = REGISTRAR.register("forge_stone", () -> new MaterialItem(legend.game.inventory.ItemIcon.STONE, 25));
-  /** Medaglie dell'Arena, si spendono a Lohan */
+  /** Medaglie dell'Arena, si spendono nei negozi oggetti delle citta' */
   public static final RegistryDelegate<Item> ARENA_MEDAL = REGISTRAR.register("arena_medal", () -> new MaterialItem(legend.game.inventory.ItemIcon.PIN, 1));
   public static final RegistryDelegate<Item> DRAGON_STONE = REGISTRAR.register("dragon_stone", () -> new MaterialItem(legend.game.inventory.ItemIcon.SIG_STONE, 100));
 

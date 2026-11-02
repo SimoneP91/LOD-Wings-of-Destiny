@@ -10,7 +10,7 @@ import org.legendofdragoon.modloader.registries.RegistryId;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/** Voce "sfida" nel negozio di Lohan: un boss gia' battuto, a un certo grado (x1/x2/x3). */
+/** Voce "sfida" nei negozi delle citta': un boss gia' battuto, a un certo grado (x1/x2/x3). */
 public class ArenaEntry implements InventoryEntry<ArenaEntry> {
   public final RegistryId boss;
   public final Arena.BossRecord record;

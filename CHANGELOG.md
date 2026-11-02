@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- The Arena and the Medal Exchange are now in the item shop of every major town, not only Lohan.
+- Dragon Stones: story bosses no longer drop them; Arena ×3 gives one, Elite battles in Cursed Zones 5% (was 30%), Medal Exchange price 12 (was 6).
+- Soul Eater, Wraith Helm and Wraith Mail no longer drain HP.
+- Fixed the "Cursed Zone" label sometimes disappearing while still in a cursed area.
+- Source code and build script published.
+
 ## 0.1.0 beta — 2026-11-01
 
 First public release.
