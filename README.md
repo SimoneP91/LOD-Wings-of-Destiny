@@ -340,6 +340,7 @@ The party starts with Dart alone; the others join with the story, at the level y
 - Monsters grow to the strength the game gives to monsters of your party's level. Every area has an expected level (Seles 4, Villude 13, Flanvel Tower 33, the Moon 46…), and the growth curves of HP, attack, EXP and gold come from the game's own monsters. Defence doesn't change.
 - Example, party at level 43: a Knight of Sandora in Seles goes from 10 HP to about 2,800, attack 2 → 58, EXP 2 → 80. Monsters of the Moon at level 60: HP ×3, attack ×1.7.
 - Never weaker than normal. Past level 46 (the Moon) the curves keep growing, more slowly.
+- Story bosses: attack and magic attack at most 1.2 times those of common monsters of your level (never below their Hard values), so they hit harder than common monsters without one-shotting the party.
 - Each cycle after the first adds +25%: New Game++ ×1.25, New Game+++ ×1.5.
 - Elite battles and Cursed Zones are 10% stronger (HP, attack, defence); their chance and rewards don't change.
 - The Arena scales by the disc of the boss. The first ×3 win gives double medals; a set of New Game+ weapons is planned in place of the Heirlooms.

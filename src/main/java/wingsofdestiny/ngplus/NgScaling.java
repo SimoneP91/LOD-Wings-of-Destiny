@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static legend.game.Scus94491BpeSegment_800b.encounter;
 import static legend.game.Scus94491BpeSegment_800b.submapId_800bd808;
 
 /**
@@ -30,6 +31,7 @@ import static legend.game.Scus94491BpeSegment_800b.submapId_800bd808;
  * - Fattore = curva(livello del party) / curva(livello dell'area), mai sotto 1, +25% per ogni ciclo dopo il primo.
  *   HP, attacco e attacco magico, EXP e oro; la difesa no (nel gioco cresce poco).
  * - Oltre il livello 46 (la Moon, ultimo dato del gioco) le curve continuano a crescere piu' piano.
+ * - Boss della storia: attacco e attacco magico al massimo 1,2 volte quelli dei comuni del livello del party.
  * Gira per ultimo (priorita' LOWEST), dopo la tabella Hard; elite, zone maledette e Arena si combinano.
  */
 public class NgScaling {
@@ -39,6 +41,8 @@ public class NgScaling {
   private static final int[] DISC_LEVEL = {10, 22, 30, 40};
   /** Bonus per ogni ciclo dopo il primo: NG++ +25%, NG+++ +50%... */
   private static final float CYCLE_BONUS = 0.25f;
+  /** Boss della storia: attacco al massimo 1,2 volte quello dei mostri comuni del livello del party (mai sotto il valore Hard). */
+  private static final float BOSS_ATTACK_CAP = 1.2f;
 
   static final Map<Integer, Integer> AREA_LEVEL = new HashMap<>();
   static final Map<Integer, List<String>> AREA_ITEMS = new HashMap<>();
@@ -201,8 +205,19 @@ public class NgScaling {
     final float at = factor("at");
     event.hp = Math.round(event.hp * hp);
     event.maxHp = Math.round(event.maxHp * hp);
-    event.attack = Math.round(event.attack * at);
-    event.magicAttack = Math.round(event.magicAttack * at);
+
+    int attack = Math.round(event.attack * at);
+    int magicAttack = Math.round(event.magicAttack * at);
+    if(!Arena.inArenaBattle() && wingsofdestiny.challenge.Challenge.isBoss(encounter)) {
+      final Curve curve = CURVES.get("at");
+      if(curve != null) {
+        final int cap = Math.round(curve.at(Arena.partyLevel()) * BOSS_ATTACK_CAP * cycleBonus());
+        attack = Math.max(event.attack, Math.min(attack, cap));
+        magicAttack = Math.max(event.magicAttack, Math.min(magicAttack, cap));
+      }
+    }
+    event.attack = attack;
+    event.magicAttack = magicAttack;
   }
 
   @EventListener(priority = Priority.LOWEST)
