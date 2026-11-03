@@ -332,6 +332,7 @@ The party starts with Dart alone; the others join with the story, at the level y
 
 - Lavitz starts at least at Albert's level, Shana at least at Miranda's.
 - When Albert and Miranda join, they keep their own data and take the better value from Lavitz and Shana for level, Dragoon level and each addition. Each keeps their own equipment.
+- With the Lloyd mod: Lloyd is not carried over, but when he joins again he gets back what he had at the end of your previous playthrough (level, Dragoon level, magic, additions and equipped gear).
 
 **Monsters**
 

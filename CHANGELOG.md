@@ -11,6 +11,7 @@
 - The Divine Tree and the Moon are never cursed outside New Game+.
 - Red-Eyed Dragon: STR 100% on all enemies (was 75%).
 - New Game+: monsters scale with the game's own strength curve per area; drops come from the area of your level; armour forging.
+- New Game+ with the Lloyd mod: Lloyd gets back his previous data when he joins again.
 - New Game+: a save created at "The End", carried-over characters and items, monsters scaled to the party's level, Hard values always on, stronger Elite battles and Cursed Zones, a fresh Arena, 14 EX additions and stronger Dragoon magic.
 - The Arena entry fee scales with the boss in New Game+.
 

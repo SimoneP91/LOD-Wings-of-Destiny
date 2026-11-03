@@ -223,6 +223,7 @@ public class NewGamePlus {
     submapId_800bd808 = OPENING_SUBMAP;
     writingCycle = next;
     writingState = state;
+    LloydCarry.prepare(old);
     try {
       GameEngine.SAVES.newSave(name, campaignType.get(), LodEngineStateTypes.SUBMAP.get().constructor_00.get(), state);
       this.message = "Saved \"" + name + "\".\nLoad it to start a New Game+.";
@@ -233,6 +234,7 @@ public class NewGamePlus {
     } finally {
       writingCycle = -1;
       writingState = null;
+      LloydCarry.done();
       submapCut_80052c30 = oldCut;
       collidedPrimitiveIndex_80052c38 = oldScene;
       submapId_800bd808 = oldSubmap;

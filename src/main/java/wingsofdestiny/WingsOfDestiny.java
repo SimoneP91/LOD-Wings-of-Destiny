@@ -61,6 +61,7 @@ public class WingsOfDestiny {
   private final wingsofdestiny.ngplus.ExAdditions exAdditions = new wingsofdestiny.ngplus.ExAdditions();
   private final wingsofdestiny.ngplus.DragoonMagic dragoonMagic = new wingsofdestiny.ngplus.DragoonMagic();
   private final wingsofdestiny.ngplus.NgDrops ngDrops = new wingsofdestiny.ngplus.NgDrops();
+  private final wingsofdestiny.ngplus.LloydCarry lloydCarry = new wingsofdestiny.ngplus.LloydCarry();
   private final wingsofdestiny.compat.LegacyModCleanup legacyCleanup = new wingsofdestiny.compat.LegacyModCleanup();
   /** Integrazione con la Lloyd mod (solo se installata). */
   private Object lloydCompat;
@@ -92,6 +93,7 @@ public class WingsOfDestiny {
     GameEngine.EVENTS.register(this.exAdditions);
     GameEngine.EVENTS.register(this.dragoonMagic);
     GameEngine.EVENTS.register(this.ngDrops);
+    GameEngine.EVENTS.register(this.lloydCarry);
     GameEngine.EVENTS.register(this.legacyCleanup);
   }
 
