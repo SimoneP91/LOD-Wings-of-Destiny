@@ -1,0 +1,52 @@
+# New Game+: area (submapId), livello previsto, consumabili droppati dai mostri dell'area (separati da ;)
+# submap,livello,oggetti,nome
+1,3,none,Forest
+2,3,lod:detonate_rock;lod:healing_potion;lod:pellet,Forest
+3,4,none,Seles
+4,6,none,Hellena Prison
+5,7,lod:angels_prayer;lod:healing_potion;lod:pellet;lod:spinning_gale,Prairie
+6,9,lod:angels_prayer;lod:body_purifier;lod:dark_mist;lod:healing_potion;lod:poison_guard,Cave
+8,10,none,Bale
+9,11,none,Indels Castle
+10,11,none,Town of Hoax
+11,12,lod:body_purifier;lod:burn_out;lod:pellet;lod:spear,Marshland
+12,13,lod:healing_potion;lod:mind_purifier;lod:spirit_cloak;lod:sun_rhapsody,Vol. Villude
+13,15,lod:angels_prayer;lod:beast_fang;lod:body_purifier;lod:mind_purifier;lod:sun_rhapsody,Nest of Dragon
+14,16,none,Lohan
+15,17,lod:body_purifier;lod:dark_mist;lod:detonate_rock;lod:fake_power_wrist;lod:sapphire_pin,Shirley's Shrine
+17,18,none,Kazas
+18,18,none,Black Castle
+19,19,none,Fletz
+20,19,none,Twin Castle
+21,19,lod:bemusing_arrow;lod:body_purifier;lod:healing_potion;lod:meteor_fall;lod:stunning_hammer,Barrens
+22,20,none,Donau
+23,21,lod:angels_prayer;lod:down_burst;lod:mind_purifier;lod:panic_bell;lod:poison_needle,Valley
+24,22,lod:bandits_ring;lod:energy_girdle;lod:pellet;lod:sachet;lod:spirit_potion,Giganto Home
+26,23,none,The Queen Fury
+27,24,none,Phantom Ship
+28,24,none,Lidiera
+29,25,lod:healing_potion;lod:knight_shield;lod:mind_purifier;lod:spear_frost;lod:spirit_potion,Undersea Cavern
+30,26,none,Fueno
+31,26,none,Prison Island
+32,27,none,Furni
+33,27,lod:angels_prayer;lod:attack_ball;lod:depetrifier;lod:healing_fog;lod:recovery_ball,Evergreen Forest
+34,28,none,Deningrad
+35,28,none,Crystal Palace
+36,29,none,Neet
+37,29,none,Wingly Forest
+38,29,lod:body_purifier;lod:dancers_ring;lod:healing_potion;lod:mind_purifier;lod:spirit_potion;lod:sun_rhapsody,Forbidden Land
+40,31,lod:body_purifier;lod:down_burst;lod:gushing_magma;lod:mind_purifier;lod:total_vanishing,Mortal Dragon Mt.
+42,32,lod:fatal_blizzard;lod:guard_badge;lod:spear_frost;lod:spirit_potion;lod:stunning_hammer,Kashua Glacier
+43,33,lod:attack_badge;lod:beast_fang;lod:body_purifier;lod:depetrifier;lod:fatal_blizzard;lod:guard_badge;lod:knight_shield;lod:magical_ring;lod:spear_frost;lod:spirit_potion;lod:stunning_hammer;wings_of_destiny:titan_ring,Flanvel Tower
+44,33,lod:attack_ball;lod:bastard_sword;lod:giganto_ring;lod:healing_potion;lod:rave_twister,Snowfield
+45,34,lod:attack_ball;lod:bastard_sword;lod:giganto_ring;lod:healing_potion;lod:rave_twister,Fort Magrad
+46,35,lod:angels_prayer;lod:flash_hall;lod:healing_fog;lod:platinum_collar;lod:total_vanishing,Vellweb
+48,36,none,Death Frontier
+49,37,none,Ulara
+50,37,lod:body_purifier;lod:healing_breeze;lod:panic_bell;lod:sages_cloak;lod:total_vanishing,Zenebatos
+51,39,lod:midnight_terror;lod:mind_purifier;lod:recovery_ball;lod:soul_eater;lod:spear_of_terror,Mayfil
+53,40,none,Rouge
+54,41,lod:angels_prayer;lod:body_purifier;lod:frozen_jet;lod:healing_fog;lod:heavy_mace,Aglis
+55,43,lod:angels_prayer;lod:dancers_boots;lod:depetrifier;lod:healing_breeze;lod:mind_purifier;lod:spirit_potion,Divine Tree
+56,46,lod:burning_wave;lod:down_burst;lod:flash_hall;lod:frozen_jet;lod:gravity_grabber;lod:healing_rain;lod:moon_serenade;lod:night_raid;lod:rainbow_dress;lod:spectral_flash;lod:spirit_potion,Moon
+57,1,none,Intro Forest

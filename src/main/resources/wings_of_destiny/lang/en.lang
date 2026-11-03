@@ -104,7 +104,7 @@ wings_of_destiny.items.rock_fireflies.battle_description=
 wings_of_destiny.config.elite_chance.label=[WoD] Elite Chance (%%)
 wings_of_destiny.config.elite_chance.help=Chance that a normal battle is Elite:\nstronger monsters, double EXP, gold and drop chance.\nNever on bosses or story battles. 0 = off.
 wings_of_destiny.config.cursed_zones.label=[WoD] Cursed Zones
-wings_of_destiny.config.cursed_zones.help=When you enter an area with monsters it may be cursed\nuntil you leave: stronger monsters, better rewards,\nmore Elite battles. The Phantom Ship is always cursed.
+wings_of_destiny.config.cursed_zones.help=When you enter an area with monsters it may be cursed\nuntil you leave: stronger monsters, better rewards,\nmore Elite battles. The Phantom Ship is always cursed,\nthe Divine Tree and the Moon never (except in New Game+).
 wings_of_destiny.config.cursed_chance.label=[WoD] Cursed Zone Chance (%%)
 wings_of_destiny.config.cursed_chance.help=Chance that an area becomes cursed when you enter it.
 

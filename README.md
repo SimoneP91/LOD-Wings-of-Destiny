@@ -94,6 +94,7 @@ When you target a monster, a bar under its name shows its current and maximum HP
 
 - Ten additions hit harder and give more SP as they level up: Volcano, Flower Storm (Lavitz and Albert), Hard Blade, More & More, Demon's Dance, Cat's Cradle, Pursuit, Inferno, Bone Crush. Perky Step is unchanged.
 - Shana and Miranda: Dragoon attack raised to 365%.
+- Red-Eyed Dragon (Dart, Dragoon level 5): STR 100% on all enemies (was 75%).
 - Wargod's Sash: SP gain +75% (was +50%). Spirit Ring: 30 SP per turn (was 20). Dancing Dagger: SP gain +50% (was none).
 - Soul Eater no longer drains HP each turn.
 - To leave Dragoon form at will, turn on Severed Chains' own *Extended Dragoon Actions* option.
@@ -113,6 +114,7 @@ Any random battle can turn Elite, and any area can turn Cursed. Both make monste
 - "This area is cursed!" appears the first time you reach a screen with random battles; **Cursed Zone** stays at the top right while you are there, in battle too.
 - Leaving the area (to another area or the world map) and coming back rolls again. Saving and reloading keeps the area as it was.
 - **The Phantom Ship is always cursed.**
+- The Divine Tree and the Moon are never cursed, except in New Game+.
 
 **Effects**
 
@@ -334,11 +336,17 @@ The party starts with Dart alone; the others join with the story, at the level y
 **Monsters**
 
 - Monsters always use the Hard values, whatever the Difficulty option.
-- HP, attack and magic attack are multiplied by your party's average level ÷ the expected level for the disc (10, 22, 30 and 40 for discs 1 to 4), never below ×1. Example: party at level 60 on disc 1 = ×6.
-- EXP and gold are multiplied by the same amount.
+- Monsters grow to the strength the game gives to monsters of your party's level. Every area has an expected level (Seles 4, Villude 13, Flanvel Tower 33, the Moon 46…), and the growth curves of HP, attack, EXP and gold come from the game's own monsters. Defence doesn't change.
+- Example, party at level 43: a Knight of Sandora in Seles goes from 10 HP to about 2,800, attack 2 → 58, EXP 2 → 80. Monsters of the Moon at level 60: HP ×3, attack ×1.7.
+- Never weaker than normal. Past level 46 (the Moon) the curves keep growing, more slowly.
 - Each cycle after the first adds +25%: New Game++ ×1.25, New Game+++ ×1.5.
 - Elite battles and Cursed Zones are 10% stronger (HP, attack, defence); their chance and rewards don't change.
-- The Arena uses the same scaling, based on the disc of the boss. The first ×3 win gives double medals; a set of New Game+ weapons is planned in place of the Heirlooms.
+- The Arena scales by the disc of the boss. The first ×3 win gives double medals; a set of New Game+ weapons is planned in place of the Heirlooms.
+
+**Drops and the Forge**
+
+- Item drops of normal battles come from the area that matches your level: a random consumable among those dropped by that area's monsters, with the same chance as the original drop. At level 43 they come from the Divine Tree, past 46 from the Moon. Bosses, the Arena and equipment drops don't change.
+- Armour can be forged too, +1 to +5: +8% defence and magic defence per level (at least +2), same gold and stones as weapons.
 
 **Dragoon magic**
 

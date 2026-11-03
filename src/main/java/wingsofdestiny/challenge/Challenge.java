@@ -46,13 +46,16 @@ import static legend.game.Scus94491BpeSegment_800b.submapId_800bd808;
 /**
  * Scontri elite e zone maledette.
  * - Elite: tutto lo scontro, mai su boss o scontri di trama senza fuga.
- * - Zona maledetta: decisa a ogni ingresso in un'area (submapId), resta finche' non esci. Phantom Ship sempre.
+ * - Zona maledetta: decisa a ogni ingresso in un'area (submapId), resta finche' non esci. Phantom Ship sempre,
+ *   Divine Tree e Moon mai nella prima partita.
  */
 public class Challenge {
   private static final Logger LOGGER = LogManager.getFormatterLogger(Challenge.class);
 
   /** Indice "Phantom Ship" nella tabella dei nomi delle aree. */
   private static final int PHANTOM_SHIP = 27;
+  /** Parte finale del gioco: mai maledetta nella prima partita, normale in New Game+. */
+  private static final int DIVINE_TREE = 55, MOON = 56;
   /** Durata del messaggio di ingresso, in frame (~4 secondi). */
   private static final int NOTICE_FRAMES = 240;
 
@@ -99,7 +102,7 @@ public class Challenge {
   }
 
   /** Boss: musica da boss o scontri speciali (a fasi, arena, Melbu). */
-  private static boolean isBoss(final Encounter encounter) {
+  public static boolean isBoss(final Encounter encounter) {
     return encounter != null && (encounter.getClass() != Encounter.class || encounter.musicIndex >= 240);
   }
 
@@ -313,6 +316,8 @@ public class Challenge {
 
     final boolean wasCursed = this.zoneCursed;
     if(!WodConfigs.cursedZones()) {
+      this.zoneCursed = false;
+    } else if((area == DIVINE_TREE || area == MOON) && !wingsofdestiny.ngplus.NewGamePlus.active()) {
       this.zoneCursed = false;
     } else if(area == PHANTOM_SHIP) {
       this.zoneCursed = true;

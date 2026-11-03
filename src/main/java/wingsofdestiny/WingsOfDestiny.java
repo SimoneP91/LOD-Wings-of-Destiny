@@ -49,6 +49,8 @@ public class WingsOfDestiny {
   private final ArchangelsPrayerHandler archangelsPrayer = new ArchangelsPrayerHandler();
   private final ShopChanges shops = new ShopChanges();
   private final EquipmentBuffs equipmentBuffs = new EquipmentBuffs();
+  private final wingsofdestiny.characters.SpellTuning spellTuning = new wingsofdestiny.characters.SpellTuning();
+  private final wingsofdestiny.items.AttackItemInfo attackItemInfo = new wingsofdestiny.items.AttackItemInfo();
   private final Challenge challenge = new Challenge();
   private final ForgedWeapons forgedWeapons = new ForgedWeapons();
   private final ForgeShop forgeShop = new ForgeShop();
@@ -58,6 +60,7 @@ public class WingsOfDestiny {
   private final wingsofdestiny.ngplus.NgScaling ngScaling = new wingsofdestiny.ngplus.NgScaling();
   private final wingsofdestiny.ngplus.ExAdditions exAdditions = new wingsofdestiny.ngplus.ExAdditions();
   private final wingsofdestiny.ngplus.DragoonMagic dragoonMagic = new wingsofdestiny.ngplus.DragoonMagic();
+  private final wingsofdestiny.ngplus.NgDrops ngDrops = new wingsofdestiny.ngplus.NgDrops();
   private final wingsofdestiny.compat.LegacyModCleanup legacyCleanup = new wingsofdestiny.compat.LegacyModCleanup();
   /** Integrazione con la Lloyd mod (solo se installata). */
   private Object lloydCompat;
@@ -77,6 +80,8 @@ public class WingsOfDestiny {
     GameEngine.EVENTS.register(this.archangelsPrayer);
     GameEngine.EVENTS.register(this.shops);
     GameEngine.EVENTS.register(this.equipmentBuffs);
+    GameEngine.EVENTS.register(this.spellTuning);
+    GameEngine.EVENTS.register(this.attackItemInfo);
     GameEngine.EVENTS.register(this.challenge);
     GameEngine.EVENTS.register(this.forgedWeapons);
     GameEngine.EVENTS.register(this.forgeShop);
@@ -86,6 +91,7 @@ public class WingsOfDestiny {
     GameEngine.EVENTS.register(this.ngScaling);
     GameEngine.EVENTS.register(this.exAdditions);
     GameEngine.EVENTS.register(this.dragoonMagic);
+    GameEngine.EVENTS.register(this.ngDrops);
     GameEngine.EVENTS.register(this.legacyCleanup);
   }
 

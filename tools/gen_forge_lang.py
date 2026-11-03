@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Genera le voci di lingua delle armi forgiate (+1..+5) dal file forge_weapons.txt."""
+"""Genera le voci di lingua di armi e armature forgiate (+1..+5) dalle liste forge_*.txt."""
 import sys, zipfile
-game_jar, wod_lang_path, list_path, out_path = sys.argv[1:5]
+game_jar, wod_lang_path, out_path = sys.argv[1:4]
+list_paths = sys.argv[4:]
 
 def props(text):
     d = {}
@@ -16,8 +17,8 @@ wod = props(open(wod_lang_path, encoding='utf-8').read())
 names = {**lod, **wod}
 # Descrizioni cambiate dalla mod (vedi EquipmentBuffs)
 names['lod.equipment.soul_eater.description'] = r'A dark blade\nthat thirsts\nfor battle.'
-out = ['', '# --- Armi forgiate (generato da tools/gen_forge_lang.py) ---']
-for line in open(list_path, encoding='utf-8'):
+out = ['', '# --- Armi e armature forgiate (generato da tools/gen_forge_lang.py) ---']
+for line in (l for path in list_paths for l in open(path, encoding='utf-8')):
     rid = line.strip()
     if not rid:
         continue

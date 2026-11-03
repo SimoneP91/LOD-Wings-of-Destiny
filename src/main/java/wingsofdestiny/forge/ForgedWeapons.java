@@ -24,9 +24,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Versioni +1..+5 delle armi elencate in data/forge_weapons.txt.
- * Ogni livello: +8% AT dell'arma base (minimo +2). Tutto il resto copiato dall'arma base.
- * Registrate con priorita' minima, cosi' le armi base (lod e nostre) esistono gia'.
+ * Versioni +1..+5 delle armi (data/forge_weapons.txt) e delle armature (data/forge_armors.txt).
+ * Ogni livello: armi +8% AT, armature +8% DF e MDF (minimo +2). Tutto il resto copiato dalla base.
+ * Le armature si forgiano solo in New Game+ (vedi ForgeShop), ma sono registrate sempre: cosi' i save restano validi.
+ * Registrate con priorita' minima, cosi' le basi (lod e nostre) esistono gia'.
  */
 public class ForgedWeapons {
   private static final Logger LOGGER = LogManager.getFormatterLogger(ForgedWeapons.class);
@@ -34,7 +35,9 @@ public class ForgedWeapons {
   private static final RegistryId DANCING_DAGGER = new RegistryId("lod", "dancing_dagger");
   private static final RegistryId SOUL_EATER = new RegistryId("lod", "soul_eater");
 
-  private static final List<RegistryId> BASES = loadBases();
+  private static final List<RegistryId> BASES = new ArrayList<>();
+  /** Le basi che sono armature. */
+  private static final Set<RegistryId> ARMORS = new java.util.HashSet<>();
 
   /** id forgiato -> (base, livello) */
   private static final Map<RegistryId, Info> INFO = new HashMap<>();
@@ -44,6 +47,10 @@ public class ForgedWeapons {
   public record Info(RegistryId base, int level) { }
 
   static {
+    BASES.addAll(loadBases("forge_weapons.txt"));
+    final List<RegistryId> armors = loadBases("forge_armors.txt");
+    BASES.addAll(armors);
+    ARMORS.addAll(armors);
     for(final RegistryId base : BASES) {
       final RegistryId[] ids = new RegistryId[MAX_LEVEL];
       for(int level = 1; level <= MAX_LEVEL; level++) {
@@ -55,11 +62,11 @@ public class ForgedWeapons {
     }
   }
 
-  private static List<RegistryId> loadBases() {
+  private static List<RegistryId> loadBases(final String file) {
     final List<RegistryId> list = new ArrayList<>();
-    try(final InputStream in = ForgedWeapons.class.getResourceAsStream("/wings_of_destiny/data/forge_weapons.txt")) {
+    try(final InputStream in = ForgedWeapons.class.getResourceAsStream("/wings_of_destiny/data/" + file)) {
       if(in == null) {
-        throw new IOException("forge_weapons.txt mancante");
+        throw new IOException(file + " mancante");
       }
       try(final BufferedReader reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8))) {
         String line;
@@ -71,14 +78,23 @@ public class ForgedWeapons {
         }
       }
     } catch(final IOException e) {
-      LOGGER.error("Wings of Destiny: lista armi forgiabili non leggibile, forgia disattivata", e);
+      LOGGER.error("Wings of Destiny: lista %s non leggibile", file, e);
     }
     return list;
   }
 
-  /** Bonus AT per livello: 8% dell'AT base, almeno 2. */
+  /** Bonus per livello: 8% del valore base, almeno 2. */
+  public static int perLevel(final int value) {
+    return Math.max(2, Math.round(value * 0.08f));
+  }
+
+  /** Bonus AT per livello delle armi. */
   public static int atkPerLevel(final Equipment base) {
-    return Math.max(2, Math.round(base.attack_10 * 0.08f));
+    return perLevel(base.attack_10);
+  }
+
+  public static boolean isArmor(final RegistryId base) {
+    return ARMORS.contains(base);
   }
 
   @EventListener(priority = Priority.LOWEST)
@@ -91,21 +107,24 @@ public class ForgedWeapons {
       }
 
       final Equipment base = GameEngine.REGISTRIES.equipment.getEntry(baseId).get();
-      final int bonus = atkPerLevel(base);
+      final boolean armor = ARMORS.contains(baseId);
+      final int atk = armor ? 0 : atkPerLevel(base);
+      final int def = armor ? perLevel(base.defence_12) : 0;
+      final int mdef = armor ? perLevel(base.magicDefence_13) : 0;
       // Lo SP x50% della Dancing Dagger viene applicato dopo: lo replichiamo sulle copie
       final int spMult = DANCING_DAGGER.equals(baseId) ? 50 : base.spMultiplier;
       // Stesso discorso per la Soul Eater: niente perdita di HP
       final int hpRegen = SOUL_EATER.equals(baseId) ? 0 : base.hpRegen;
 
       for(int level = 1; level <= MAX_LEVEL; level++) {
-        event.register(LEVELS.get(baseId)[level - 1], copy(base, level, bonus, spMult, hpRegen));
+        event.register(LEVELS.get(baseId)[level - 1], copy(base, level, atk, def, mdef, spMult, hpRegen));
         count++;
       }
     }
-    LOGGER.info("Wings of Destiny: registrate %d armi forgiate", count);
+    LOGGER.info("Wings of Destiny: registrati %d oggetti forgiati", count);
   }
 
-  private static Equipment copy(final Equipment b, final int level, final int bonus, final int spMult, final int hpRegen) {
+  private static Equipment copy(final Equipment b, final int level, final int atk, final int def, final int mdef, final int spMult, final int hpRegen) {
     final int sell = Math.round(b.price * (1.0f + 0.5f * level));
     final Equipment e = new Equipment(
       sell, b.flags_00, b.slot, legend.lodmod.LodMod.NO_ELEMENT.get(), b.elementalResistance_06, b.elementalImmunity_07, b.statusResist_08,
@@ -113,7 +132,7 @@ public class ForgedWeapons {
       b.hpMultiplier, b.mpMultiplier, spMult,
       b.magicalResistance, b.physicalResistance, b.magicalImmunity, b.physicalImmunity,
       b.revive, hpRegen, b.mpRegen, b.spRegen, b.escapeBonus,
-      b.icon_0e, b.speed_0f, b.attack_10 + bonus * level, b.magicAttack_11, b.defence_12, b.magicDefence_13,
+      b.icon_0e, b.speed_0f, b.attack_10 + atk * level, b.magicAttack_11, b.defence_12 + def * level, b.magicDefence_13 + mdef * level,
       b.attackHit_14, b.magicHit_15, b.attackAvoid_16, b.magicAvoid_17, b.onHitStatusChance_18, b.onHitStatus_1b
     );
     e.attackElement_04.set(b.attackElement_04);

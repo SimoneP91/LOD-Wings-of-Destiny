@@ -9,8 +9,8 @@ CP="$SC/lod-game-ab5dfe5ba6d4c07464a2f0e67985b9e77e2f7bdb.jar:$SC/libs/mod-loade
 rm -rf build && mkdir -p build/classes
 "$JDK/bin/javac" --release 25 -Xlint:all,-processing,-serial -cp "$CP" -d build/classes $(find src/main/java -name '*.java')
 cp -r src/main/resources/. build/classes/
-# Nomi delle armi forgiate (+1..+5), generati dalla lista delle armi base
-python3 tools/gen_forge_lang.py "$SC/lod-game-ab5dfe5ba6d4c07464a2f0e67985b9e77e2f7bdb.jar" src/main/resources/wings_of_destiny/lang/en.lang src/main/resources/wings_of_destiny/data/forge_weapons.txt build/forge.lang
+# Nomi di armi e armature forgiate (+1..+5), generati dalle liste delle basi
+python3 tools/gen_forge_lang.py "$SC/lod-game-ab5dfe5ba6d4c07464a2f0e67985b9e77e2f7bdb.jar" src/main/resources/wings_of_destiny/lang/en.lang build/forge.lang src/main/resources/wings_of_destiny/data/forge_weapons.txt src/main/resources/wings_of_destiny/data/forge_armors.txt
 cat build/forge.lang >> build/classes/wings_of_destiny/lang/en.lang
 (cd build/classes && "$JDK/bin/jar" --create --file ../wings_of_destiny.jar .)
 echo "OK -> build/wings_of_destiny.jar"

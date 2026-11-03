@@ -32,7 +32,7 @@ public class ForgeEntry implements InventoryEntry<ForgeEntry> {
     return this.target == null;
   }
 
-  /** Costo: 10/12/14/16/20% del prezzo d'acquisto dell'arma base, minimo 50G. */
+  /** Costo: 10/12/14/16/20% del prezzo d'acquisto della base, minimo 50G. */
   public int goldCost() {
     if(this.isMaxed()) {
       return 0;
@@ -75,7 +75,13 @@ public class ForgeEntry implements InventoryEntry<ForgeEntry> {
     if(this.isMaxed()) {
       return "Already at the\nmaximum level.";
     }
-    final StringBuilder sb = new StringBuilder("Forge: AT ").append(this.source.attack_10).append(" > ").append(this.target.attack_10);
+    final StringBuilder sb = new StringBuilder();
+    if(ForgedWeapons.isArmor(this.base)) {
+      sb.append("Forge: DF ").append(this.source.defence_12).append(" > ").append(this.target.defence_12)
+        .append(", MDF ").append(this.source.magicDefence_13).append(" > ").append(this.target.magicDefence_13);
+    } else {
+      sb.append("Forge: AT ").append(this.source.attack_10).append(" > ").append(this.target.attack_10);
+    }
     if(this.forgeStones() > 0) {
       sb.append("\nNeeds ").append(this.forgeStones()).append(" Forge Stone (").append(ForgeShop.count(true)).append(')');
     } else {

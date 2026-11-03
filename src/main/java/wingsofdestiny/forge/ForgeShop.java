@@ -29,7 +29,7 @@ import java.util.Set;
 import static legend.game.SItem.menuStack;
 import static legend.game.Scus94491BpeSegment_800b.gameState_800babc8;
 
-/** In ogni negozio di equipaggiamento, una voce di forgia per ogni arma forgiabile che hai nella borsa. */
+/** In ogni negozio di equipaggiamento, una voce di forgia per ogni arma forgiabile che hai nella borsa (in New Game+ anche le armature). */
 public class ForgeShop {
   private static final Logger LOGGER = LogManager.getFormatterLogger(ForgeShop.class);
 
@@ -47,6 +47,10 @@ public class ForgeShop {
     for(final Equipment equipment : gameState_800babc8.equipment_1e8) {
       final ForgedWeapons.Info info = ForgedWeapons.info(equipment);
       if(info == null || info.level() >= ForgedWeapons.MAX_LEVEL || !seen.add(equipment.getRegistryId())) {
+        continue;
+      }
+      // Armature: solo in New Game+
+      if(ForgedWeapons.isArmor(info.base()) && !wingsofdestiny.ngplus.NewGamePlus.active()) {
         continue;
       }
 
@@ -94,11 +98,11 @@ public class ForgeShop {
       final ForgeEntry entry = shopEntry.item;
 
       if(entry.isMaxed()) {
-        alert(screen, "This weapon is already\nat the maximum level.");
+        alert(screen, "Already at the\nmaximum level.");
         return false;
       }
       if(!gameState.equipment_1e8.contains(entry.source)) {
-        alert(screen, "You no longer carry\nthis weapon.");
+        alert(screen, "You no longer carry\nthis item.");
         return false;
       }
       if(gameState.gold_94 < shopEntry.price) {

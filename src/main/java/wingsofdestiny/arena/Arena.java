@@ -300,6 +300,11 @@ public class Arena {
     active = null;
   }
 
+  /** Battaglia d'Arena in corso. */
+  public static boolean inArenaBattle() {
+    return inArena();
+  }
+
   /** Disco su cui scalare la battaglia in corso: quello del boss in Arena, altrimenti quello attuale. */
   public static int battleDisc() {
     return inArena() ? active.record.disc : disc();
