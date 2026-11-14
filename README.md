@@ -18,6 +18,7 @@ The story and its progression stay intact; Wings of Destiny adds reasons to expl
 - [Equipment and items](#equipment-and-items)
 - [New Game+](#new-game)
 - [What's next](#whats-next)
+- [Compatibility with other mods](#compatibility-with-other-mods)
 - [Building from source](#building-from-source)
 - [FAQ and troubleshooting](#faq-and-troubleshooting)
 
@@ -385,6 +386,10 @@ Planned for future versions, in rough order:
 3. **Weapons with unique effects** — weapons that do more than add numbers, with effects tied to elements, remaining HP or SP.
 4. **New Arena rewards** — items that permanently raise a stat by 1 and a unique accessory for each character, in the Medal Exchange.
 5. **Quality of life** — a dedicated Forge menu separate from the Buy list, and shop lists that refresh without leaving the shop.
+
+## Compatibility with other mods
+
+Wings of Destiny is meant to be the only gameplay mod of a campaign. The Lloyd mod is supported; Dragoon Modifier and Battle Rewards are not, because they rebalance the same things. Details, other mods and a known crash are in [COMPATIBILITY.md](COMPATIBILITY.md).
 
 ## Building from source
 
