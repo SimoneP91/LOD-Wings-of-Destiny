@@ -13,6 +13,8 @@
 - New Game+: monsters scale with the game's own strength curve per area; drops come from the area of your level; armour forging.
 - New Game+ with the Lloyd mod: Lloyd gets back his previous data when he joins again.
 - New Game+: story bosses' attack capped at 1.2 times that of common monsters of the party's level.
+- Fixed the sound staying muted after losing an Arena battle.
+- The Commander of Seles is no longer available in the Arena: that fight is meant for Dart alone and its enemies kept attacking downed characters.
 - New Game+: a save created at "The End", carried-over characters and items, monsters scaled to the party's level, Hard values always on, stronger Elite battles and Cursed Zones, a fresh Arena, 14 EX additions and stronger Dragoon magic.
 - The Arena entry fee scales with the boss in New Game+.
 

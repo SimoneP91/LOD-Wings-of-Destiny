@@ -52,6 +52,10 @@ public class ArenaShop {
 
     // 1. Sfide d'Arena (in oro)
     for(final Map.Entry<RegistryId, Arena.BossRecord> boss : Arena.DEFEATED.entrySet()) {
+      // Boss tolti dall'Arena dopo essere stati segnati in un save
+      if(!legend.core.GameEngine.REGISTRIES.encounters.hasEntry(Arena.arenaId(boss.getKey()))) {
+        continue;
+      }
       for(int grade = 1; grade <= 3; grade++) {
         final ArenaEntry entry = new ArenaEntry(boss.getKey(), boss.getValue(), grade);
         contents.add(at++, new ShopScreen.ShopEntry<>(entry, entry.cost()));

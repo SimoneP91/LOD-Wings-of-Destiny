@@ -152,11 +152,15 @@ public class Arena {
     return pending != null;
   }
 
-  /** Boss "normali": scontro di classe base con musica da boss, esclusi gli scontri di prova/vuoti. */
+  /** Scontri che la storia fa fare con Dart da solo: con tre personaggi i nemici attaccano anche chi e' a terra. */
+  private static final java.util.Set<String> EXCLUDED = java.util.Set.of("seles_commander");
+
+  /** Boss "normali": scontro di classe base con musica da boss, esclusi gli scontri di prova/vuoti e quelli in EXCLUDED. */
   static boolean isArenaBoss(final RegistryId id, final Encounter enc) {
     final String name = id.entryId();
     return enc.getClass() == Encounter.class && enc.musicIndex >= 240
-      && !name.contains("missing") && !name.contains("test") && !name.contains("dummy");
+      && !name.contains("missing") && !name.contains("test") && !name.contains("dummy")
+      && !EXCLUDED.contains(name);
   }
 
   static RegistryId arenaId(final RegistryId original) {
@@ -436,9 +440,14 @@ public class Arena {
       LOGGER.info("Wings of Destiny: %d medaglie d'Arena", medals);
     }
 
-    // Dopo una sconfitta: chi e' a terra torna a 1 HP
+    // Dopo una sconfitta: chi e' a terra torna a 1 HP, e il volume torna normale
+    // (l'uscita per sconfitta lo porta a zero e qui nessuno script della mappa lo rialza)
     if(this.reviveParty && state instanceof SMap && gameState_800babc8 != null) {
       this.reviveParty = false;
+      legend.game.sound.Audio.soundEnv_800c6630.fadingIn_2a = false;
+      legend.game.sound.Audio.soundEnv_800c6630.fadingOut_2b = false;
+      legend.game.sound.Audio.setMainVolume(0x7f, 0x7f);
+      GameEngine.AUDIO_THREAD.setMainVolume(0x7f, 0x7f);
       for(final CharacterData2c character : gameState_800babc8.charData_32c) {
         final VitalsStat hp = character.stats.getStat(HP_STAT.get());
         if(hp.getCurrent() <= 0) {
